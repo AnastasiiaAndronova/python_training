@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 from selenium import webdriver
 import unittest
+from group import Group
 
 
 class TestAddGroup(unittest.TestCase):
@@ -13,7 +14,7 @@ class TestAddGroup(unittest.TestCase):
         self.open_home_page(wb)
         self.login(wb, user="admin", password="secret")
         self.open_groups_page(wb)
-        self.create_group(wb, name="New test group", header="Test group header", footer="Test group footer")
+        self.create_group(wb, Group(name="New test group", header="Test group header", footer="Test group footer"))
         self.return_to_groups_page(wb)
         self.logout(wb)
 
@@ -22,7 +23,7 @@ class TestAddGroup(unittest.TestCase):
         self.open_home_page(wb)
         self.login(wb, user="admin", password="secret")
         self.open_groups_page(wb)
-        self.create_group(wb, name="", header="", footer="")
+        self.create_group(wb, Group(name="", header="", footer=""))
         self.return_to_groups_page(wb)
         self.logout(wb)
 
@@ -33,18 +34,18 @@ class TestAddGroup(unittest.TestCase):
 
         wb.find_element_by_link_text("group page").click()
 
-    def create_group(self, wb, name, header, footer):
+    def create_group(self, wb, group):
         # start group creation
         wb.find_element_by_name("group_name").click()
         # populate group's form page
         wb.find_element_by_name("group_name").clear()
-        wb.find_element_by_name("group_name").send_keys(name)
+        wb.find_element_by_name("group_name").send_keys(group.name)
         wb.find_element_by_name("group_header").click()
         wb.find_element_by_name("group_header").clear()
-        wb.find_element_by_name("group_header").send_keys(header)
+        wb.find_element_by_name("group_header").send_keys(group.header)
         wb.find_element_by_name("group_footer").click()
         wb.find_element_by_name("group_footer").clear()
-        wb.find_element_by_name("group_footer").send_keys(footer)
+        wb.find_element_by_name("group_footer").send_keys(group.footer)
         # Submit group creation
         wb.find_element_by_name("submit").click()
 
