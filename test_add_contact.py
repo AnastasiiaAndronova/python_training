@@ -16,17 +16,33 @@ class TestAddContact(unittest.TestCase):
         open_home_page(wb)
         login(wb, user="admin", password="secret")
         self.open_add_group_page(wb)
-        self.create_new_contact(wb, Contact(firstname="test first name", middlename="test middle name",lastname="test last name",nickname="test nick name",title="test title",
-            company="Test company", address="Test adress", home="Test home", mobile="Test mobile", work="Test work", fax="Test fax",
-            email="Test email",email2="Test email 2",email3="Test email 3",homepage="Test homepage", address2 = "Test address2", phone2="Test phone 2", notes="Test notes"))
+        self.create_new_contact(wb, Contact(firstname="test first name", middlename="test middle name", lastname="test last name",nickname="test nick name",
+                                    title="test title", company="Test company", address="Test adress", home="Test home", mobile="Test mobile", work="Test work", fax="Test fax",
+                                    email="Test email", email2="Test email 2", email3="Test email 3", homepage="Test homepage", address2="Test address2", phone2="Test phone 2",
+                                    notes="Test notes", birthday_day = "1", birthday_month = "October", birthday_year = "1990", anniversary_day = "2", anniversary_month = "May", anniversary_year = "2000"))
         self.return_to_home_page(wb)
         logout(wb)
+
+    def test_add_empty_contact(self):
+        wb = self.wb
+        open_home_page(wb)
+        login(wb, user="admin", password="secret")
+        self.open_add_group_page(wb)
+        self.create_new_contact(wb, Contact(firstname="", middlename="", lastname="",nickname="",
+                                    title="", company="", address="", home="", mobile="", work="", fax="",
+                                    email="", email2="", email3="", homepage="", address2="", phone2="",
+                                    notes="", birthday_day = "", birthday_month="", birthday_year ="", anniversary_day="", anniversary_month="", anniversary_year=""))
+        self.return_to_home_page(wb)
+        logout(wb)
+
 
     def return_to_home_page(self, wb):
         wb.find_element_by_link_text("home page").click()
 
     def create_new_contact(self, wb, Contact):
         # populate "add contact" fields
+
+        # Хотелось сделать универсальный метод populate_form_fields но пока непонятно как лучше "правильно" хранить множество свойств для одних и тех же обьектов.
 
         wb.find_element_by_name("firstname").clear()
         wb.find_element_by_name("firstname").send_keys(Contact.firstname)
@@ -58,16 +74,23 @@ class TestAddContact(unittest.TestCase):
         wb.find_element_by_name("email3").send_keys(Contact.email3)
         wb.find_element_by_name("homepage").clear()
         wb.find_element_by_name("homepage").send_keys(Contact.homepage)
+        # Fill fields with date
 
-        Select(wb.find_element_by_name("bday")).select_by_visible_text("17")
-        Select(wb.find_element_by_name("bmonth")).select_by_visible_text("October")
+        # Обрабатываем случай, когда послали для выбора из списка пустое значение:
+        # это скорее всего не очень хорошее решение, но в конкретно нашем случае тесты работоспособны
+        if Contact.birthday_day is not "":
+            Select(wb.find_element_by_name("bday")).select_by_visible_text(Contact.birthday_day)
+        if Contact.birthday_month is not "":
+            Select(wb.find_element_by_name("bmonth")).select_by_visible_text(Contact.birthday_month)
         wb.find_element_by_name("byear").clear()
-        wb.find_element_by_name("byear").send_keys("1990")
-        Select(wb.find_element_by_name("aday")).select_by_visible_text("1")
-        Select(wb.find_element_by_name("amonth")).select_by_visible_text("December")
-
+        wb.find_element_by_name("byear").send_keys(Contact.birthday_year)
+        if Contact.anniversary_day is not "":
+            Select(wb.find_element_by_name("aday")).select_by_visible_text(Contact.anniversary_day)
+        if Contact.anniversary_month is not "":
+            Select(wb.find_element_by_name("amonth")).select_by_visible_text(Contact.anniversary_month)
         wb.find_element_by_name("ayear").clear()
-        wb.find_element_by_name("ayear").send_keys("2018")
+        wb.find_element_by_name("ayear").send_keys(Contact.anniversary_year)
+
         wb.find_element_by_name("address2").clear()
         wb.find_element_by_name("address2").send_keys(Contact.address2)
         wb.find_element_by_name("phone2").clear()
