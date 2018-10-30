@@ -14,3 +14,4 @@ def open_home_page(wb):
 
 def logout(wb):
         wb.find_element_by_link_text("Logout").click()
+
