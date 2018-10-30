@@ -16,10 +16,9 @@ class TestAddContact(unittest.TestCase):
         open_home_page(wb)
         login(wb, user="admin", password="secret")
         self.open_add_group_page(wb)
-        a = Contact(firstname="test first name", middlename="test middle name",lastname="test last name",nickname="test nick name",title="test title",
+        self.create_new_contact(wb, Contact(firstname="test first name", middlename="test middle name",lastname="test last name",nickname="test nick name",title="test title",
             company="Test company", address="Test adress", home="Test home", mobile="Test mobile", work="Test work", fax="Test fax",
-            email="Test email",email2="Test email 2",email3="Test email 3",homepage="Test homepage", address2 = "Test address2", phone2="Test phone 2", notes="Test notes")
-        self.create_new_contact(wb, a)
+            email="Test email",email2="Test email 2",email3="Test email 3",homepage="Test homepage", address2 = "Test address2", phone2="Test phone 2", notes="Test notes"))
         self.return_to_home_page(wb)
         logout(wb)
 
@@ -61,19 +60,11 @@ class TestAddContact(unittest.TestCase):
         wb.find_element_by_name("homepage").send_keys(Contact.homepage)
 
         Select(wb.find_element_by_name("bday")).select_by_visible_text("17")
-        wb.find_element_by_xpath(
-            "(.//*[normalize-space(text()) and normalize-space(.)='Birthday:'])[1]/following::option[19]").click()
         Select(wb.find_element_by_name("bmonth")).select_by_visible_text("October")
-        wb.find_element_by_xpath(
-            "(.//*[normalize-space(text()) and normalize-space(.)='Birthday:'])[1]/following::option[44]").click()
         wb.find_element_by_name("byear").clear()
         wb.find_element_by_name("byear").send_keys("1990")
         Select(wb.find_element_by_name("aday")).select_by_visible_text("1")
-        wb.find_element_by_xpath(
-            "(.//*[normalize-space(text()) and normalize-space(.)='Anniversary:'])[1]/following::option[3]").click()
         Select(wb.find_element_by_name("amonth")).select_by_visible_text("December")
-        wb.find_element_by_xpath(
-            "(.//*[normalize-space(text()) and normalize-space(.)='Anniversary:'])[1]/following::option[46]").click()
 
         wb.find_element_by_name("ayear").clear()
         wb.find_element_by_name("ayear").send_keys("2018")
