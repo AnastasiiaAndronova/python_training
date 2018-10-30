@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 from selenium import webdriver
 from selenium.webdriver.support.ui import Select
-from selenium.common.exceptions import NoSuchElementException
-from selenium.common.exceptions import NoAlertPresentException
+from common_methods import login,logout,open_home_page
+
 import unittest
 
 class TestAddContact(unittest.TestCase):
@@ -12,23 +12,17 @@ class TestAddContact(unittest.TestCase):
     
     def test_add_contact(self):
         wb = self.wb
+        open_home_page(wb)
+        login(wb, user="admin", password="secret")
+        self.open_add_group_page(wb)
+        self.create_new_contact(wb)
+        self.return_to_home_page(wb)
+        logout(wb)
 
-        # Open home page
-        wb.get("http://localhost/addressbook/")
+    def return_to_home_page(self, wb):
+        wb.find_element_by_link_text("home page").click()
 
-        # Login
-        wb.find_element_by_name("user").click()
-        wb.find_element_by_name("user").clear()
-        wb.find_element_by_name("user").send_keys("admin")
-        wb.find_element_by_name("pass").click()
-        wb.find_element_by_name("pass").clear()
-        wb.find_element_by_name("pass").send_keys("secret")
-        wb.find_element_by_xpath("//input[@value='Login']").click()
-
-    # Open "Add contact page"
-        wb.find_element_by_link_text("add new").click()
-
-    # Pupulate form fields
+    def create_new_contact(self, wb):
         wb.find_element_by_name("firstname").click()
         wb.find_element_by_name("firstname").clear()
         wb.find_element_by_name("firstname").send_keys("5555")
@@ -77,19 +71,23 @@ class TestAddContact(unittest.TestCase):
         wb.find_element_by_name("homepage").send_keys("tttt")
         wb.find_element_by_name("bday").click()
         Select(wb.find_element_by_name("bday")).select_by_visible_text("17")
-        wb.find_element_by_xpath("(.//*[normalize-space(text()) and normalize-space(.)='Birthday:'])[1]/following::option[19]").click()
+        wb.find_element_by_xpath(
+            "(.//*[normalize-space(text()) and normalize-space(.)='Birthday:'])[1]/following::option[19]").click()
         wb.find_element_by_name("bmonth").click()
         Select(wb.find_element_by_name("bmonth")).select_by_visible_text("October")
-        wb.find_element_by_xpath("(.//*[normalize-space(text()) and normalize-space(.)='Birthday:'])[1]/following::option[44]").click()
+        wb.find_element_by_xpath(
+            "(.//*[normalize-space(text()) and normalize-space(.)='Birthday:'])[1]/following::option[44]").click()
         wb.find_element_by_name("byear").click()
         wb.find_element_by_name("byear").clear()
         wb.find_element_by_name("byear").send_keys("1990")
         wb.find_element_by_name("aday").click()
         Select(wb.find_element_by_name("aday")).select_by_visible_text("1")
-        wb.find_element_by_xpath("(.//*[normalize-space(text()) and normalize-space(.)='Anniversary:'])[1]/following::option[3]").click()
+        wb.find_element_by_xpath(
+            "(.//*[normalize-space(text()) and normalize-space(.)='Anniversary:'])[1]/following::option[3]").click()
         wb.find_element_by_name("amonth").click()
         Select(wb.find_element_by_name("amonth")).select_by_visible_text("December")
-        wb.find_element_by_xpath("(.//*[normalize-space(text()) and normalize-space(.)='Anniversary:'])[1]/following::option[46]").click()
+        wb.find_element_by_xpath(
+            "(.//*[normalize-space(text()) and normalize-space(.)='Anniversary:'])[1]/following::option[46]").click()
         wb.find_element_by_name("ayear").click()
         wb.find_element_by_name("ayear").clear()
         wb.find_element_by_name("ayear").send_keys("2018")
@@ -102,17 +100,14 @@ class TestAddContact(unittest.TestCase):
         wb.find_element_by_name("notes").click()
         wb.find_element_by_name("notes").clear()
         wb.find_element_by_name("notes").send_keys("3333")
-        # Sunbmit contact creation
+        # Submit contact creation
         wb.find_element_by_xpath("(//input[@name='submit'])[2]").click()
-        # Return to Home page
-        wb.find_element_by_link_text("home page").click()
-        # Logout
-        wb.find_element_by_link_text("Logout").click()
-    
+
+    def open_add_group_page(self, wb):
+        wb.find_element_by_link_text("add new").click()
 
     def tearDown(self):
         self.wb.quit()
-        self.assertEqual([], self.verificationErrors)
 
 if __name__ == "__main__":
     unittest.main()
