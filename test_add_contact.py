@@ -1,7 +1,8 @@
 # -*- coding: utf-8 -*-
 from selenium import webdriver
 from selenium.webdriver.support.ui import Select
-from common_methods import login,logout,open_home_page
+from common_methods import login, logout, open_home_page
+from forms_classes import Contact
 
 import unittest
 
@@ -22,8 +23,8 @@ class TestAddContact(unittest.TestCase):
     def return_to_home_page(self, wb):
         wb.find_element_by_link_text("home page").click()
 
-    def create_new_contact(self, wb):
-        # populate "add contact" fields 
+    def create_new_contact(self, wb, contact_data):
+        # populate "add contact" fields
         wb.find_element_by_name("firstname").clear()
         wb.find_element_by_name("firstname").send_keys("5555")
         wb.find_element_by_name("middlename").clear()
