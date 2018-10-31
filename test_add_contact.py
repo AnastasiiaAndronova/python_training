@@ -2,8 +2,7 @@
 from selenium import webdriver
 from selenium.webdriver.support.ui import Select
 from common_methods import login, logout, open_home_page
-from forms_classes import Contact
-
+from contact import Contact
 import unittest
 
 class TestAddContact(unittest.TestCase):
@@ -109,4 +108,4 @@ class TestAddContact(unittest.TestCase):
 if __name__ == "__main__":
     unittest.main()
 
-    
+

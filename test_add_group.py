@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 from selenium import webdriver
 import unittest
-from forms_classes import Group
+from group import Group
 
 
 class TestAddGroup(unittest.TestCase):
