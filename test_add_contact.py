@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 from selenium import webdriver
 from selenium.webdriver.support.ui import Select
-from common_methods import login, logout, open_home_page
 from contact import Contact
 import unittest
 
@@ -11,38 +10,36 @@ class TestAddContact(unittest.TestCase):
         self.wb.implicitly_wait(30)
     
     def test_add_contact(self):
-        wb = self.wb
-        open_home_page(wb)
-        login(wb, user="admin", password="secret")
-        self.open_add_group_page(wb)
-        self.create_new_contact(wb, Contact(firstname="test first name", middlename="test middle name", lastname="test last name",nickname="test nick name",
+        self.open_home_page()
+        self.login(user="admin", password="secret")
+        self.open_add_group_page()
+        self.create_new_contact(Contact(firstname="test first name", middlename="test middle name", lastname="test last name",nickname="test nick name",
                                     title="test title", company="Test company", address="Test adress", home="Test home", mobile="Test mobile", work="Test work", fax="Test fax",
                                     email="Test email", email2="Test email 2", email3="Test email 3", homepage="Test homepage", address2="Test address2", phone2="Test phone 2",
                                     notes="Test notes", birthday_day = "1", birthday_month = "October", birthday_year = "1990", anniversary_day = "2", anniversary_month = "May", anniversary_year = "2000"))
-        self.return_to_home_page(wb)
-        logout(wb)
+        self.return_to_home_page()
+        self.logout()
 
     def test_add_empty_contact(self):
-        wb = self.wb
-        open_home_page(wb)
-        login(wb, user="admin", password="secret")
-        self.open_add_group_page(wb)
-        self.create_new_contact(wb, Contact(firstname="", middlename="", lastname="",nickname="",
+        self.open_home_page()
+        self.login(user="admin", password="secret")
+        self.open_add_group_page()
+        self.create_new_contact(Contact(firstname="", middlename="", lastname="",nickname="",
                                     title="", company="", address="", home="", mobile="", work="", fax="",
                                     email="", email2="", email3="", homepage="", address2="", phone2="",
                                     notes="", birthday_day = "", birthday_month="", birthday_year ="", anniversary_day="", anniversary_month="", anniversary_year=""))
-        self.return_to_home_page(wb)
-        logout(wb)
+        self.return_to_home_page()
+        self.logout()
 
 
-    def return_to_home_page(self, wb):
+    def return_to_home_page(self):
+        wb = self.wb
         wb.find_element_by_link_text("home page").click()
 
-    def create_new_contact(self, wb, Contact):
+    def create_new_contact(self, Contact):
+        wb = self.wb
         # populate "add contact" fields
-
         # Хотелось сделать универсальный метод populate_form_fields но пока непонятно как лучше "правильно" хранить множество свойств для одних и тех же обьектов.
-
         wb.find_element_by_name("firstname").clear()
         wb.find_element_by_name("firstname").send_keys(Contact.firstname)
         wb.find_element_by_name("middlename").clear()
@@ -99,8 +96,27 @@ class TestAddContact(unittest.TestCase):
         # Submit contact creation
         wb.find_element_by_xpath("(//input[@name='submit'])[2]").click()
 
-    def open_add_group_page(self, wb):
+    def open_add_group_page(self):
+        wb = self.wb
         wb.find_element_by_link_text("add new").click()
+
+    def login(self, user, password):
+        wb = self.wb
+        wb.find_element_by_name("user").clear()
+        wb.find_element_by_name("user").send_keys(user)
+        wb.find_element_by_id("LoginForm").click()
+        wb.find_element_by_name("pass").click()
+        wb.find_element_by_name("pass").clear()
+        wb.find_element_by_name("pass").send_keys(password)
+        wb.find_element_by_xpath("//input[@value='Login']").click()
+
+    def open_home_page(self):
+        wb = self.wb
+        wb.get("http://localhost/addressbook/")
+
+    def logout(self):
+        wb = self.wb
+        wb.find_element_by_link_text("Logout").click()
 
     def tearDown(self):
         self.wb.quit()
