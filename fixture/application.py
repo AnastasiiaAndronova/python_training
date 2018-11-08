@@ -1,7 +1,6 @@
 from selenium import webdriver
 from selenium.webdriver.support.ui import Select
-from group import Group
-from contact import Contact
+
 
 class Application:
 
