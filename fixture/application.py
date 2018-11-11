@@ -16,9 +16,10 @@ class Application:
     def destroy(self):
         self.wb.quit()
 
-    def open_home_page(self):
+    def open_login_page(self):
         wb = self.wb
         wb.get("http://localhost/addressbook/")
+
 
 
 
