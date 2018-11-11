@@ -1,6 +1,7 @@
 from selenium.webdriver.support.ui import Select
 
 class ContactHelper:
+
     def __init__(self, app):
         self.app = app
 
@@ -47,7 +48,6 @@ class ContactHelper:
         wb.find_element_by_name("homepage").clear()
         wb.find_element_by_name("homepage").send_keys(Contact.homepage)
         # Fill fields with date
-
         # Обрабатываем случай, когда послали для выбора из списка пустое значение:
         # это скорее всего не очень хорошее решение, но в конкретно нашем случае тесты работоспособны
         if Contact.birthday_day is not "":
@@ -62,7 +62,6 @@ class ContactHelper:
             Select(wb.find_element_by_name("amonth")).select_by_visible_text(Contact.anniversary_month)
         wb.find_element_by_name("ayear").clear()
         wb.find_element_by_name("ayear").send_keys(Contact.anniversary_year)
-
         wb.find_element_by_name("address2").clear()
         wb.find_element_by_name("address2").send_keys(Contact.address2)
         wb.find_element_by_name("phone2").clear()
