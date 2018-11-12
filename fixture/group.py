@@ -37,7 +37,7 @@ class GroupHelper:
         wb.find_element_by_name("submit").click()
         self.return_to_groups_page()
 
-    def edit_first_group(self,group):
+    def edit_first(self, group):
         wb = self.app.wb
         # start group editing
         wb.find_element_by_name("selected[]").click()
@@ -55,7 +55,7 @@ class GroupHelper:
         wb.find_element_by_name("update").click()
         self.return_to_groups_page()
 
-    def delete_first_group (self):
+    def delete_first (self):
         wb = self.app.wb
         self.open_groups_page()
         wb.find_element_by_name("selected[]").click()

@@ -9,7 +9,6 @@ class SessionHelper:
     def logout(self):
         wb = self.app.wb
         wb.find_element_by_link_text("Logout").click()
-     #   self.app.open_login_page() - c этим не работает
         WebDriverWait(wb, 5).until(EC.presence_of_element_located((By.ID, "LoginForm")))
 
 
