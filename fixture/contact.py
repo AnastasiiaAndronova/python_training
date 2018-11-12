@@ -70,3 +70,8 @@ class ContactHelper:
         wb.find_element_by_name("notes").send_keys(Contact.notes)
         # Submit contact creation
         wb.find_element_by_xpath("(//input[@name='submit'])[2]").click()
+
+    def delete_first_group(self, Contact):
+        wb = self.app.wb
+
+
