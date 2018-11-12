@@ -1,7 +1,6 @@
 from model.contact import Contact
 
 def test_add_contact(app):
-    app.open_login_page()
     app.session.login(user="admin", password="secret")
     app.contact.open_add_contact_page()
     app.contact.create(Contact(firstname="test first name", middlename="test middle name", lastname="test last name", nickname="test nick name",
@@ -12,7 +11,6 @@ def test_add_contact(app):
     app.session.logout()
 
 def test_add_empty_contact(app):
-    app.open_login_page()
     app.session.login(user="admin", password="secret")
     app.contact.open_add_contact_page()
     app.contact.create(Contact(firstname="", middlename="", lastname="", nickname="",
