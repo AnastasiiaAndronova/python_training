@@ -19,6 +19,7 @@ class ContactHelper:
 
     def create(self, Contact):
         wb = self.app.wb
+        self.open_add_contact_page()
         # populate "add contact" fields
         # Хотелось сделать универсальный метод populate_form_fields но пока непонятно как лучше "правильно" хранить множество свойств для одних и тех же обьектов.
         wb.find_element_by_name("firstname").clear()

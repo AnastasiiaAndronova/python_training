@@ -12,10 +12,6 @@ class GroupHelper:
         wb = self.app.wb
         wb.find_element_by_name("new").click()
 
-    def open_add_contact_page(self):
-        wb = self.app.wb
-        wb.find_element_by_link_text("add new").click()
-
     def return_to_groups_page(self):
         wb = self.app.wb
         wb.find_element_by_link_text("group page").click()
@@ -23,6 +19,7 @@ class GroupHelper:
     def create(self,group):
         wb = self.app.wb
         # start group creation
+        self.open_add_group_page()
         wb.find_element_by_name("group_name").click()
         # populate group's form page
         wb.find_element_by_name("group_name").clear()
