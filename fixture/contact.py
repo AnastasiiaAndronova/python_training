@@ -29,6 +29,8 @@ class ContactHelper:
         wb.find_element_by_name("lastname").send_keys(Contact.lastname)
         wb.find_element_by_name("nickname").clear()
         wb.find_element_by_name("nickname").send_keys(Contact.nickname)
+        if Contact.photo is not "":
+            wb.find_element_by_name("photo").send_keys(Contact.photo)
         wb.find_element_by_name("title").clear()
         wb.find_element_by_name("title").send_keys(Contact.title)
         wb.find_element_by_name("company").clear()
@@ -90,6 +92,8 @@ class ContactHelper:
         wb.find_element_by_name("lastname").send_keys(Contact.lastname)
         wb.find_element_by_name("nickname").clear()
         wb.find_element_by_name("nickname").send_keys(Contact.nickname)
+        if Contact.photo is not "":
+            wb.find_element_by_name("photo").send_keys(Contact.photo)
         wb.find_element_by_name("title").clear()
         wb.find_element_by_name("title").send_keys(Contact.title)
         wb.find_element_by_name("company").clear()
@@ -114,7 +118,6 @@ class ContactHelper:
         wb.find_element_by_name("homepage").send_keys(Contact.homepage)
         # Fill fields with date
         # Обрабатываем случай, когда послали для выбора из списка пустое значение:
-        # это скорее всего не очень хорошее решение, но в конкретно нашем случае тесты работоспособны
         if Contact.birthday_day is not "":
             Select(wb.find_element_by_name("bday")).select_by_visible_text(Contact.birthday_day)
         if Contact.birthday_month is not "":
