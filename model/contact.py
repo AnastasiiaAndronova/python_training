@@ -1,10 +1,32 @@
 
 class Contact:
 
-    def __init__(self, firstname, middlename, lastname, nickname, photo, title,
-                 company, address, home, mobile, work, fax,
-                 email, email2, email3, homepage, address2, phone2, notes,
-                 birthday_day, birthday_month, birthday_year, anniversary_day, anniversary_month, anniversary_year):
+    def __init__(self,
+                 firstname=None,
+                 middlename=None,
+                 lastname=None,
+                 nickname=None,
+                 photo=None,
+                 title=None,
+                 company=None,
+                 address=None,
+                 home=None,
+                 mobile=None,
+                 work=None,
+                 fax=None,
+                 email=None,
+                 email2=None,
+                 email3=None,
+                 homepage=None,
+                 address2=None,
+                 phone2=None,
+                 notes=None,
+                 birthday_day=None,
+                 birthday_month=None,
+                 birthday_year=None,
+                 anniversary_day=None,
+                 anniversary_month=None,
+                 anniversary_year=None):
 
         # form fields
         self.firstname = firstname

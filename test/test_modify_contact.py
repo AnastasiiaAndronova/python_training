@@ -1,7 +1,7 @@
 from model.contact import Contact
 
 
-
+# пока редактируем весь контакт целиком, но уже можем редактировать так же и частями
 def test_modify_first_contact(app):
     app.session.login(user="admin", password="secret")
     app.contact.modify_first(Contact(firstname="test first name1",

@@ -1,9 +1,8 @@
 
 from model.contact import Contact
 
-
 def test_add_contact(app):
-    app.session.login(user="admin", password="secret")
+    app.session.login()
     app.contact.create(Contact(firstname="test first name",
                                middlename="test middle name",
                                lastname="test last name",
@@ -32,32 +31,8 @@ def test_add_contact(app):
     app.session.logout()
 
 def test_add_empty_contact(app):
-    app.session.login(user="admin", password="secret")
-    app.contact.create(Contact(firstname="",
-                               middlename="",
-                               lastname="",
-                               nickname="",
-                               photo="",
-                               title="",
-                               company="",
-                               address="",
-                               home="",
-                               mobile="",
-                               work="",
-                               fax="",
-                               email="",
-                               email2="",
-                               email3="",
-                               homepage="",
-                               address2="",
-                               phone2="",
-                               notes="",
-                               birthday_day="",
-                               birthday_month="",
-                               birthday_year ="",
-                               anniversary_day="",
-                               anniversary_month="",
-                               anniversary_year=""))
+    app.session.login()
+    app.contact.create(Contact())
     app.contact.return_to_home_page()
     app.session.logout()
 
