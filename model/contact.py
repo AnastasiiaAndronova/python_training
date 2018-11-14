@@ -6,7 +6,7 @@ class Contact:
                  middlename=None,
                  lastname=None,
                  nickname=None,
-                 photo=None,
+                 # photo=None,
                  title=None,
                  company=None,
                  address=None,
@@ -33,7 +33,7 @@ class Contact:
         self.middlename = middlename
         self.lastname = lastname
         self.nickname = nickname
-        self.photo = photo
+        # self.photo = photo
         self.title = title
         self.company = company
         self.address = address

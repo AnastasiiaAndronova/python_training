@@ -7,7 +7,7 @@ def test_add_contact(app):
                                middlename="test middle name",
                                lastname="test last name",
                                nickname="test nick name",
-                               photo="C:\\python_training\\Images\\image1.jpg",
+                               # photo="C:\\python_training\\Images\\image1.jpg",
                                title="test title",
                                company="Test company",
                                address="Test adress",

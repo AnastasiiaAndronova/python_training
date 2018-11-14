@@ -6,7 +6,7 @@ def test_modify_first_contact(app):
                                      middlename="test middle name1",
                                      lastname="test last name1",
                                      nickname="test nick name1",
-                                     photo="C:\\python_training\\Images\\image2.jpg",
+                                     # photo="C:\\python_training\\Images\\image2.jpg",
                                      title="test title1",
                                      company="Test company1",
                                      address="Test adress1",

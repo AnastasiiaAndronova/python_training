@@ -33,8 +33,8 @@ class ContactHelper:
         self.app.actions.change_field_value("middlename", Contact.middlename)
         self.app.actions.change_field_value("lastname", Contact.lastname)
         self.app.actions.change_field_value("nickname", Contact.nickname)
-        if Contact.photo is not None:
-            wb.find_element_by_name("photo").send_keys(Contact.photo)
+        # if Contact.photo is not None:
+        #     wb.find_element_by_name("photo").send_keys(Contact.photo)
         self.app.actions.change_field_value("title", Contact.title)
         self.app.actions.change_field_value("company", Contact.company)
         self.app.actions.change_field_value("address", Contact.address)
@@ -73,8 +73,8 @@ class ContactHelper:
         wb.find_element_by_name("lastname").send_keys(Contact.lastname)
         wb.find_element_by_name("nickname").clear()
         wb.find_element_by_name("nickname").send_keys(Contact.nickname)
-        if Contact.photo is not "":
-            wb.find_element_by_name("photo").send_keys(Contact.photo)
+        # if Contact.photo is not "":
+        #     wb.find_element_by_name("photo").send_keys(Contact.photo)
         wb.find_element_by_name("title").clear()
         wb.find_element_by_name("title").send_keys(Contact.title)
         wb.find_element_by_name("company").clear()
