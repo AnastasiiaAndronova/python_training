@@ -33,7 +33,7 @@ def test_add_contact(app):
 def test_add_empty_contact(app):
     app.session.login()
     app.contact.create(Contact())
-    app.contact.return_to_home_page()
+
     app.session.logout()
 
 

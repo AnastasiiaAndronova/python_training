@@ -1,6 +1,7 @@
 
 from selenium.webdriver.support.ui import Select
 from selenium.webdriver.common.alert import Alert
+from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
 
@@ -12,6 +13,11 @@ class ContactHelper:
     def return_to_home_page(self):
         wb = self.app.wb
         wb.find_element_by_link_text("home page").click()
+
+    def navigate_to_home_page(self):
+        wb = self.app.wb
+        wb.find_element_by_link_text("home").click()
+        WebDriverWait(wb, 5).until(EC.presence_of_element_located((By.ID, "content")))
 
     def open_add_contact_page(self):
         wb = self.app.wb
@@ -120,3 +126,5 @@ class ContactHelper:
         wb.find_element_by_xpath("//input[@value='Delete']").click()
         WebDriverWait(wb, 5).until(EC.alert_is_present())
         Alert(wb).accept()
+
+
