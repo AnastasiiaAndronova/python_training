@@ -6,13 +6,13 @@ class ActionsHelper:
         self.app = app
 
     def change_field_value(self,field_name,text=None):
-        wb = self.app.wb
+        wd = self.app.wd
         if text is not None:
-            wb.find_element_by_name(field_name).clear()
-            wb.find_element_by_name(field_name).click()
-            wb.find_element_by_name(field_name).send_keys(text)
+            wd.find_element_by_name(field_name).clear()
+            wd.find_element_by_name(field_name).click()
+            wd.find_element_by_name(field_name).send_keys(text)
 
     def select_in_dropdown(self, list_name, list_value=None):
-        wb = self.app.wb
+        wd = self.app.wd
         if list_value is not None:
-            Select(wb.find_element_by_name(list_name)).select_by_visible_text(list_value)
+            Select(wd.find_element_by_name(list_name)).select_by_visible_text(list_value)

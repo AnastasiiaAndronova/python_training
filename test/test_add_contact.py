@@ -2,7 +2,6 @@
 from model.contact import Contact
 
 def test_add_contact(app):
-    app.session.login()
     app.contact.create(Contact(firstname="test first name",
                                middlename="test middle name",
                                lastname="test last name",
@@ -27,14 +26,12 @@ def test_add_contact(app):
                                anniversary_day="2",
                                anniversary_month="May",
                                anniversary_year="2000"))
-    app.contact.return_to_home_page()
-    app.session.logout()
+    app.contact.open_homepage()
+
 
 def test_add_empty_contact(app):
-    app.session.login()
     app.contact.create(Contact())
 
-    app.session.logout()
 
 
 

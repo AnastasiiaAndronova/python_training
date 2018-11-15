@@ -1,7 +1,6 @@
 from model.contact import Contact
 # пока редактируем весь контакт целиком, но уже можем редактировать так же и частями
 def test_modify_first_contact(app):
-    app.session.login(user="admin", password="secret")
     app.contact.modify_first(Contact(firstname="test first name1",
                                      middlename="test middle name1",
                                      lastname="test last name1",
@@ -27,6 +26,5 @@ def test_modify_first_contact(app):
                                      anniversary_day="3",
                                      anniversary_month="August",
                                      anniversary_year="2018"))
-    app.contact.return_to_home_page()
-    app.session.logout()
+    app.contact.open_homepage()
 # пока что только первая группа
