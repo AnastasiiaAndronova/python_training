@@ -8,12 +8,12 @@ class ContactHelper:
     def __init__(self, app):
         self.app = app
 
-    def open_homepage(self):
+    def return_to_homepage(self):
         wd = self.app.wd
         wd.find_element_by_link_text("home page").click()
         WebDriverWait(wd, 5).until(EC.presence_of_element_located((By.NAME, "searchstring")))
 
-    def force_navigate_homepage(self):
+    def open_homepage(self):
         wd = self.app.wd
         wd.find_element_by_link_text("home").click()
         WebDriverWait(wd, 5).until(EC.presence_of_element_located((By.NAME, "searchstring")))
@@ -59,7 +59,7 @@ class ContactHelper:
 
     def modify_first(self, Contact):
         wd = self.app.wd
-        self.app.contact.force_navigate_homepage()
+        self.app.contact.open_homepage()
         # open first contact for edit
         WebDriverWait(wd, 5).until(EC.presence_of_element_located((By.NAME, "selected[]")))
         wd.find_element_by_name("selected[]").click()
@@ -71,7 +71,7 @@ class ContactHelper:
 
     def delete_first(self):
         wd = self.app.wd
-        self.app.contact.force_navigate_homepage()
+        self.app.contact.open_homepage()
         wd.find_element_by_name("selected[]").click()
         wd.find_element_by_xpath("//input[@value='Delete']").click()
         WebDriverWait(wd, 5).until(EC.alert_is_present())
@@ -79,4 +79,7 @@ class ContactHelper:
         WebDriverWait(wd, 5).until(EC.presence_of_element_located((By.XPATH, "(.//*[normalize-space(text()) and normalize-space(.)='Record successful deleted'])[1]/preceding::h1[1]")))
 
 
-
+    def count(self):
+        wd = self.app.wd
+        self.open_homepage()
+        return len(wd.find_elements_by_name("selected[]"))

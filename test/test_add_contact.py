@@ -26,7 +26,7 @@ def test_add_contact(app):
                                anniversary_day="2",
                                anniversary_month="May",
                                anniversary_year="2000"))
-    app.contact.open_homepage()
+    app.contact.return_to_homepage()
 
 
 def test_add_empty_contact(app):

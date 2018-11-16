@@ -26,5 +26,5 @@ def test_modify_first_contact(app):
                                      anniversary_day="3",
                                      anniversary_month="August",
                                      anniversary_year="2018"))
-    app.contact.open_homepage()
+    app.contact.return_to_homepage()
 # пока что только первая группа
