@@ -19,12 +19,15 @@ class GroupHelper:
         wd = self.app.wd
         # start group creationf
         self.open_add_group_page()
-        self.app.actions.change_field_value("group_name", group.name)
-        self.app.actions.change_field_value("group_header", group.header)
-        self.app.actions.change_field_value("group_footer", group.footer)
+        self.fill_the_form(group)
         # Submit group creation
         wd.find_element_by_name("submit").click()
         self.return_to_groups_page()
+
+    def fill_the_form(self, group):
+        self.app.actions.change_field_value("group_name", group.name)
+        self.app.actions.change_field_value("group_header", group.header)
+        self.app.actions.change_field_value("group_footer", group.footer)
 
     def edit_first(self, group):
         wd = self.app.wd
@@ -32,9 +35,7 @@ class GroupHelper:
         self.select_first()
         wd.find_element_by_name("edit").click()
         # populate group's form page
-        self.app.actions.change_field_value("group_name", group.name)
-        self.app.actions.change_field_value("group_header", group.header)
-        self.app.actions.change_field_value("group_footer", group.footer)
+        self.fill_the_form(group)
         # Submit group creation
         wd.find_element_by_name("update").click()
         self.return_to_groups_page()
