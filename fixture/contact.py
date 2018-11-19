@@ -15,12 +15,14 @@ class ContactHelper:
 
     def open_homepage(self):
         wd = self.app.wd
-        wd.find_element_by_link_text("home").click()
-        WebDriverWait(wd, 5).until(EC.presence_of_element_located((By.NAME, "searchstring")))
+# проверяем адрес урл и наличие поля для поиска, которое есть только на домашней странице (в списке контактов)
+        if not (wd.current_url.endswith("/addressbook/") and len(wd.find_elements_by_name ("searchstring")) > 0):
+            wd.find_element_by_link_text("home").click()
 
     def open_add_contact_page(self):
         wd = self.app.wd
-        wd.find_element_by_link_text("add new").click()
+        if not (wd.current_url.endswith("addressbook/edit.php") and len(wd.find_elements_by_name("searchstring")) > 0 and len(wd.find_elements_by_name("firstname"))):
+            wd.find_element_by_link_text("add new").click()
 
     def create(self, Contact):
         wd = self.app.wd
@@ -61,12 +63,11 @@ class ContactHelper:
         wd = self.app.wd
         self.app.contact.open_homepage()
         # open first contact for edit
-        WebDriverWait(wd, 5).until(EC.presence_of_element_located((By.NAME, "selected[]")))
+        #WebDriverWait(wd, 5).until(EC.presence_of_element_located((By.NAME, "selected[]")))
         wd.find_element_by_name("selected[]").click()
-        WebDriverWait(wd, 5).until(EC.presence_of_element_located((By.XPATH, "//img[@alt='Edit']")))
+        #WebDriverWait(wd, 5).until(EC.presence_of_element_located((By.XPATH, "//img[@alt='Edit']")))
         wd.find_element_by_xpath("//img[@alt='Edit']").click()
         self.fill_the_form(Contact)
-        # Submit contact editing
         wd.find_element_by_name("update").click()
 
     def delete_first(self):
@@ -74,9 +75,9 @@ class ContactHelper:
         self.app.contact.open_homepage()
         wd.find_element_by_name("selected[]").click()
         wd.find_element_by_xpath("//input[@value='Delete']").click()
-        WebDriverWait(wd, 5).until(EC.alert_is_present())
+        WebDriverWait(wd, 3).until(EC.alert_is_present())
         wd.switch_to.alert.accept()
-        WebDriverWait(wd, 5).until(EC.presence_of_element_located((By.XPATH, "(.//*[normalize-space(text()) and normalize-space(.)='Record successful deleted'])[1]/preceding::h1[1]")))
+        WebDriverWait(wd, 3).until(EC.presence_of_element_located((By.XPATH, "(.//*[normalize-space(text()) and normalize-space(.)='Record successful deleted'])[1]/preceding::h1[1]")))
 
 
     def count(self):
