@@ -1,17 +1,24 @@
 from model.group import Group
+from sys import maxsize
 
 def test_add_group(app):
-    current_groups = app.group.get_group_list()
-    app.group.create(Group(name="New test group",
+    old_groups = app.group.get_group_list()
+    group = Group(name="New test group",
                            header="Test group header",
-                           footer="Test group footer"))
+                           footer="Tet group footer")
+    app.group.create(group)
     new_groups = app.group.get_group_list()
-    assert len(current_groups) + 1 == len(new_groups)
+    assert len(old_groups) + 1 == len(new_groups)
+    old_groups.append(group)
+    assert sorted(old_groups, key=Group.id_or_max) == sorted(new_groups, key=Group.id_or_max)
 
 
 def test_add_empty_group(app):
-    current_groups = app.group.get_group_list()
-    app.group.create(Group())
+    old_groups = app.group.get_group_list()
+    group = Group(name="", header='', footer='')
+    app.group.create(group)
     new_groups = app.group.get_group_list()
-    assert len(current_groups) + 1 == len(new_groups)
+    assert len(old_groups) + 1 == len(new_groups)
+    old_groups.append(group)
+    assert sorted(old_groups, key=Group.id_or_max) == sorted(new_groups, key=Group.id_or_max)
 
