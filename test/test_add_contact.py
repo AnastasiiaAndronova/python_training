@@ -2,7 +2,8 @@
 from model.contact import Contact
 
 def test_add_contact(app):
-    app.contact.create(Contact(firstname="test first name",
+
+    contact = Contact(firstname="test first name",
                                middlename="test middle name",
                                lastname="test last name",
                                nickname="test nick name",
@@ -25,12 +26,26 @@ def test_add_contact(app):
                                birthday_year="1990",
                                anniversary_day="2",
                                anniversary_month="May",
-                               anniversary_year="2000"))
+                               anniversary_year="2000")
+    old_contacts = app.contact.get_contact_list()
+    app.contact.create(contact)
     app.contact.return_to_homepage()
+    new_contacts = app.contact.get_contact_list()
+    assert len(old_contacts) + 1 == len(new_contacts)
+    new_contacts.append(contact)
+    assert sorted(new_contacts, key=Contact.id_or_max) == sorted(new_contacts, key=Contact.id_or_max)
+
 
 
 def test_add_empty_contact(app):
-    app.contact.create(Contact())
+    contact = Contact()
+    old_contacts = app.contact.get_contact_list()
+    app.contact.create(contact)
+    app.contact.return_to_homepage()
+    new_contacts = app.contact.get_contact_list()
+    assert len(old_contacts) + 1 == len(new_contacts)
+    new_contacts.append(contact)
+    assert sorted(new_contacts, key=Contact.id_or_max) == sorted(new_contacts, key=Contact.id_or_max)
 
 
 

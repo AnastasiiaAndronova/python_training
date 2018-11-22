@@ -1,3 +1,4 @@
+from sys import maxsize
 
 class Contact:
 
@@ -26,7 +27,8 @@ class Contact:
                  birthday_year=None,
                  anniversary_day=None,
                  anniversary_month=None,
-                 anniversary_year=None):
+                 anniversary_year=None,
+                 id = None):
 
         # form fields
         self.firstname = firstname
@@ -55,4 +57,22 @@ class Contact:
         self.anniversary_day = anniversary_day
         self.anniversary_month = anniversary_month
         self.anniversary_year = anniversary_year
+
+        self.id = id
+
+# метод определяет как будут выглядеть обьекты при выводе на консоль
+    def __repr__(self):
+        return "%s:%s:%s" % (self.id, self.lastname, self.firstname)
+
+# метод сравнения
+    def __eq__(self, other):
+        return (self.id is None or other.id is None or self.id == other.id)and self.firstname == other.firstname
+               #and self.lastname == other.lastname\
+               #
+
+    def id_or_max(self):
+        if self.id:
+            return int(self.id)
+        else:
+            return maxsize
 
