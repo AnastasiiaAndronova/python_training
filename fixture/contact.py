@@ -92,10 +92,10 @@ class ContactHelper:
         contact_list = []
         a =  wd.find_elements_by_css_selector("tr[name=entry]")
         for i in a:
-            cells = wd.find_elements_by_tag_name("td")
+            cells = i.find_elements_by_tag_name("td")
             lastname=cells[1].text
             firstname = cells[2].text
             id = i.find_element_by_name("selected[]").get_attribute("value")
             contact_list.append(Contact(lastname=lastname, firstname=firstname, id=id))
-            pass
+
         return contact_list
