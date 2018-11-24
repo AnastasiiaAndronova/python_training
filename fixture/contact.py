@@ -9,6 +9,8 @@ class ContactHelper:
     def __init__(self, app):
         self.app = app
 
+    contact_cache = None
+
     def return_to_homepage(self):
         wd = self.app.wd
         wd.find_element_by_link_text("home page").click()
@@ -30,6 +32,7 @@ class ContactHelper:
         self.open_add_contact_page()
         self.fill_the_form(Contact)
         wd.find_element_by_xpath("(//input[@name='submit'])[2]").click()
+        self.contact_cache = None
 
     def fill_the_form(self, Contact):
         self.app.actions.change_field_value("firstname", Contact.firstname)
@@ -70,6 +73,7 @@ class ContactHelper:
         wd.find_element_by_xpath("//img[@alt='Edit']").click()
         self.fill_the_form(Contact)
         wd.find_element_by_name("update").click()
+        self.contact_cache = None
 
     def delete_first(self):
         wd = self.app.wd
@@ -79,6 +83,7 @@ class ContactHelper:
         WebDriverWait(wd, 3).until(EC.alert_is_present())
         wd.switch_to.alert.accept()
         WebDriverWait(wd, 3).until(EC.presence_of_element_located((By.XPATH, "(.//*[normalize-space(text()) and normalize-space(.)='Record successful deleted'])[1]/preceding::h1[1]")))
+        self.contact_cache = None
 
 
     def count(self):
@@ -87,15 +92,14 @@ class ContactHelper:
         return len(wd.find_elements_by_name("selected[]"))
 
     def get_contact_list(self):
-        wd = self.app.wd
-        self.open_homepage()
-        contact_list = []
-        a =  wd.find_elements_by_css_selector("tr[name=entry]")
-        for i in a:
-            cells = i.find_elements_by_tag_name("td")
-            lastname=cells[1].text
-            firstname = cells[2].text
-            id = i.find_element_by_name("selected[]").get_attribute("value")
-            contact_list.append(Contact(lastname=lastname, firstname=firstname, id=id))
-
-        return contact_list
+        if self.contact_cache is None:
+            wd = self.app.wd
+            self.open_homepage()
+            self.contact_cache = []
+            for i in wd.find_elements_by_css_selector("tr[name=entry]"):
+                cells = i.find_elements_by_tag_name("td")
+                lastname=cells[1].text
+                firstname = cells[2].text
+                id = i.find_element_by_name("selected[]").get_attribute("value")
+                self.contact_cache.append(Contact(lastname=lastname, firstname=firstname, id=id))
+        return list(self.contact_cache)
