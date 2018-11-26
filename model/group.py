@@ -15,10 +15,17 @@ class Group:
 
 # метод сравнения
     def __eq__(self, other):
-        return (self.id is None or other.id is None or self.id == other.id) and self.name == other.name
+
+        if self.name == other.name:
+            if self.id is None:
+                return True
+            if  other.id is None:
+                return True
+            if self.id == other.id:
+                return True
+        return False
 
     def id_or_max(self):
         if self.id:
             return int(self.id)
-        else:
-            return maxsize
+        return maxsize

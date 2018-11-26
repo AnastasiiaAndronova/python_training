@@ -65,13 +65,22 @@ class Contact:
         return "%s:%s:%s" % (self.id, self.lastname, self.firstname)
 
 # метод сравнения
-    def __eq__(self, other):
-        return (self.id is None or other.id is None or self.id == other.id)and self.firstname == other.firstname and self.lastname == other.lastname
 
+    def __eq__(self, other):
+
+        if self.lastname != other.lastname:
+            return False
+
+        elif self.firstname != other.firstname:
+            return False
+
+        elif self.id is not None and other.id is not None and self.id != other.id:
+            return False
+
+        return True
 
     def id_or_max(self):
         if self.id:
             return int(self.id)
-        else:
-            return maxsize
+        return maxsize
 
