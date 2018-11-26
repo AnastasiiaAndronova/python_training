@@ -66,8 +66,7 @@ class ContactHelper:
     def modify_first(self, Contact):
         wd = self.app.wd
         self.app.contact.open_homepage()
-        self.select_by_index(0)
-        wd.find_element_by_xpath("//img[@alt='Edit']").click()
+        self.open_for_edit_by_index(0)
         self.fill_the_form(Contact)
         wd.find_element_by_name("update").click()
         self.contact_cache = None
@@ -75,11 +74,14 @@ class ContactHelper:
     def modify_by_index(self, Contact, index):
         wd = self.app.wd
         self.app.contact.open_homepage()
-        self.select_by_index(index)
-        wd.find_element_by_xpath("//img[@alt='Edit']").click()
+        self.open_for_edit_by_index(index)
         self.fill_the_form(Contact)
         wd.find_element_by_name("update").click()
         self.contact_cache = None
+
+    def open_for_edit_by_index(self, index):
+        wd = self.app.wd
+        wd.find_elements_by_xpath("//img[@alt='Edit']")[index].click()
 
     def delete_first(self):
         wd = self.app.wd
