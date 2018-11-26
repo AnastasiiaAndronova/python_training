@@ -1,4 +1,5 @@
 from model.contact import Contact
+from random import randrange
 # пока редактируем весь контакт целиком, но уже можем редактировать так же и частями
 def test_modify_first_contact(app):
     if app.contact.count() == 0:
@@ -10,7 +11,21 @@ def test_modify_first_contact(app):
     app.contact.modify_first(contact)
     assert len(old_contacts) == app.contact.count()
     new_conctacts = app.contact.get_contact_list()
-    old_contacts[0] =contact
+    old_contacts[0] = contact
+    assert sorted(old_contacts, key=Contact.id_or_max) == sorted(new_conctacts, key=Contact.id_or_max)
+
+def test_modify_some_contact(app):
+    if app.contact.count() == 0:
+        app.contact.create(Contact())
+    app.contact.open_homepage()
+    old_contacts = app.contact.get_contact_list()
+    index = randrange(len(old_contacts))
+    contact = (Contact(firstname="test first name1", lastname="test last name1"))
+    contact.id = old_contacts[index].id
+    app.contact.modify_by_index(contact, index)
+    assert len(old_contacts) == app.contact.count()
+    new_conctacts = app.contact.get_contact_list()
+    old_contacts[index] = contact
     assert sorted(old_contacts, key=Contact.id_or_max) == sorted(new_conctacts, key=Contact.id_or_max)
 
     # app.contact.modify_first(Contact(firstname="test first name1",

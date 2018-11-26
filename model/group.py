@@ -8,7 +8,6 @@ class Group:
         self.footer = footer
         self.id = id
 
-
 # метод определяет как будут выглядеть обьекты при выводе на консоль
     def __repr__(self):
         return "%s:%s" % (self.id, self.name)
@@ -19,7 +18,7 @@ class Group:
         if self.name == other.name:
             if self.id is None:
                 return True
-            if  other.id is None:
+            if other.id is None:
                 return True
             if self.id == other.id:
                 return True

@@ -66,10 +66,16 @@ class ContactHelper:
     def modify_first(self, Contact):
         wd = self.app.wd
         self.app.contact.open_homepage()
-        # open first contact for edit
-        #WebDriverWait(wd, 5).until(EC.presence_of_element_located((By.NAME, "selected[]")))
-        wd.find_element_by_name("selected[]").click()
-        #WebDriverWait(wd, 5).until(EC.presence_of_element_located((By.XPATH, "//img[@alt='Edit']")))
+        self.select_by_index(0)
+        wd.find_element_by_xpath("//img[@alt='Edit']").click()
+        self.fill_the_form(Contact)
+        wd.find_element_by_name("update").click()
+        self.contact_cache = None
+
+    def modify_by_index(self, Contact, index):
+        wd = self.app.wd
+        self.app.contact.open_homepage()
+        self.select_by_index(index)
         wd.find_element_by_xpath("//img[@alt='Edit']").click()
         self.fill_the_form(Contact)
         wd.find_element_by_name("update").click()
@@ -78,13 +84,26 @@ class ContactHelper:
     def delete_first(self):
         wd = self.app.wd
         self.app.contact.open_homepage()
-        wd.find_element_by_name("selected[]").click()
+        self.select_by_index(0)
         wd.find_element_by_xpath("//input[@value='Delete']").click()
         WebDriverWait(wd, 3).until(EC.alert_is_present())
         wd.switch_to.alert.accept()
         WebDriverWait(wd, 3).until(EC.presence_of_element_located((By.XPATH, "(.//*[normalize-space(text()) and normalize-space(.)='Record successful deleted'])[1]/preceding::h1[1]")))
         self.contact_cache = None
 
+    def delete_by_index(self, index):
+        wd = self.app.wd
+        self.app.contact.open_homepage()
+        self.select_by_index(index)
+        wd.find_element_by_xpath("//input[@value='Delete']").click()
+        WebDriverWait(wd, 3).until(EC.alert_is_present())
+        wd.switch_to.alert.accept()
+        WebDriverWait(wd, 3).until(EC.presence_of_element_located((By.XPATH, "(.//*[normalize-space(text()) and normalize-space(.)='Record successful deleted'])[1]/preceding::h1[1]")))
+        self.contact_cache = None
+
+    def select_by_index(self, index):
+        wd = self.app.wd
+        wd.find_elements_by_name("selected[]")[index].click()
 
     def count(self):
         wd = self.app.wd
