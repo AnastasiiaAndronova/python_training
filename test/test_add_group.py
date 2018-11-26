@@ -1,5 +1,4 @@
 from model.group import Group
-from random import randrange
 
 def test_add_group(app):
     old_groups = app.group.get_group_list()
