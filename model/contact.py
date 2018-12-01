@@ -11,10 +11,12 @@ class Contact:
                  title=None,
                  company=None,
                  address=None,
-                 home=None,
-                 mobile=None,
-                 work=None,
-                 fax=None,
+
+                 homephone=None,
+                 mobilephone=None,
+                 workphone=None,
+                 faxphone=None,
+
                  email=None,
                  email2=None,
                  email3=None,
@@ -22,6 +24,7 @@ class Contact:
                  address2=None,
                  phone2=None,
                  notes=None,
+                 home = None,
                  birthday_day=None,
                  birthday_month=None,
                  birthday_year=None,
@@ -39,15 +42,18 @@ class Contact:
         self.title = title
         self.company = company
         self.address = address
-        self.home = home
-        self.mobile = mobile
-        self.work = work
-        self.fax = fax
+
+        self.homephone = homephone
+        self.mobilephone = mobilephone
+        self.workphone = workphone
+        self.faxphone = faxphone
+
         self.email = email
         self.email2 = email2
         self.email3 = email3
         self.homepage = homepage
         self.address2 = address2
+        self.home = home
         self.phone2 = phone2
         self.notes = notes
         # For dates:
@@ -62,7 +68,13 @@ class Contact:
 
 # метод определяет как будут выглядеть обьекты при выводе на консоль
     def __repr__(self):
-        return "%s:%s:%s" % (self.id, self.lastname, self.firstname)
+        return "%s:%s:%s:%s:%s:%s:%s" % (self.id,
+                                      self.lastname,
+                                      self.firstname,
+                                      self.mobilephone,
+                                      self.homephone,
+                                      self.faxphone,
+                                      self.workphone)
 
 # метод сравнения
 

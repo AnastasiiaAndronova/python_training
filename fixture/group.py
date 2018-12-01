@@ -1,4 +1,4 @@
-from model.group import  Group
+from model.group import Group
 
 class GroupHelper:
 
@@ -10,7 +10,7 @@ class GroupHelper:
     def open_groups_page(self):
         wd = self.app.wd
 # проверяем адрес урл и наличие кнопки создания новой группы
-        if not (wd.current_url.endswith("/group.php") and len(wd.find_elements_by_name ("new")) > 0):
+        if not (wd.current_url.endswith("/group.php") and len(wd.find_elements_by_name("new")) > 0):
             wd.find_element_by_link_text("groups").click()
 
     def open_add_group_page(self):
@@ -28,7 +28,7 @@ class GroupHelper:
             return
         wd.find_element_by_link_text("group page").click()
 
-    def create(self,group):
+    def create(self, group):
         wd = self.app.wd
         self.open_add_group_page()
         self.fill_the_form(group)
