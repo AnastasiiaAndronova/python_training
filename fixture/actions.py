@@ -1,5 +1,6 @@
 # класс с методами для взаимодействия с элементами (заполнять поля, выбирать значение из списка и т.п. которые будут встречаться во многих местах)
 from selenium.webdriver.support.ui import Select
+import re
 class ActionsHelper:
 
     def __init__(self,app):
@@ -16,3 +17,11 @@ class ActionsHelper:
         wd = self.app.wd
         if list_value is not None:
             Select(wd.find_element_by_name(list_name)).select_by_visible_text(list_value)
+
+
+    def search_matching_by_template(self, template, text):
+        try:
+            return re.search(template, text).group(1)
+        except:
+           return ""
+

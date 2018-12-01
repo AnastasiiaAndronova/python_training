@@ -22,6 +22,9 @@ class Contact:
                  email=None,
                  email2=None,
                  email3=None,
+
+                 all_emails_from_home_page = None,
+
                  homepage=None,
                  address2=None,
                  phone2=None,
@@ -55,6 +58,8 @@ class Contact:
         self.email = email
         self.email2 = email2
         self.email3 = email3
+
+        self.all_emails_from_home_page = all_emails_from_home_page
         self.homepage = homepage
         self.address2 = address2
         self.home = home
@@ -72,13 +77,18 @@ class Contact:
 
 # метод определяет как будут выглядеть обьекты при выводе на консоль
     def __repr__(self):
-        return "%s:%s:%s:%s:%s:%s:%s" % (self.id,
+        return "%s:%s:%s:%s:%s:%s:%s:%s:%s:%s:%s:%s" % (self.id,
                                       self.lastname,
                                       self.firstname,
                                       self.mobilephone,
                                       self.homephone,
                                       self.faxphone,
-                                      self.workphone)
+                                      self.workphone,
+                                      self.email,
+                                      self.email2,
+                                      self.email3,
+                                      self.address,
+                                      self.phone2)
 
 # метод сравнения
 
