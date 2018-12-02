@@ -10,7 +10,7 @@ class Group:
 
 # метод определяет как будут выглядеть обьекты при выводе на консоль
     def __repr__(self):
-        return "%s:%s" % (self.id, self.name)
+        return "id = %s: name = %s header = %s: footer = %s" % (self.id, self.name, self.header, self.footer)
 
 # метод сравнения
     def __eq__(self, other):

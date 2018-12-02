@@ -11,20 +11,15 @@ class Contact:
                  title=None,
                  company=None,
                  address=None,
-
                  all_phones_from_home_page=None,
-
                  homephone=None,
                  mobilephone=None,
                  workphone=None,
                  faxphone=None,
-
                  email=None,
                  email2=None,
                  email3=None,
-
                  all_emails_from_home_page = None,
-
                  homepage=None,
                  address2=None,
                  phone2=None,
@@ -77,18 +72,38 @@ class Contact:
 
 # метод определяет как будут выглядеть обьекты при выводе на консоль
     def __repr__(self):
-        return "%s:%s:%s:%s:%s:%s:%s:%s:%s:%s:%s:%s" % (self.id,
-                                      self.lastname,
-                                      self.firstname,
-                                      self.mobilephone,
-                                      self.homephone,
-                                      self.faxphone,
-                                      self.workphone,
-                                      self.email,
-                                      self.email2,
-                                      self.email3,
-                                      self.address,
-                                      self.phone2)
+        return "id = %s:, lastname = %s: firstname = %s: middlename = %s: nickname = %s: " \
+               "title = %s: company = %s: address =  %s: " \
+               "homephone = %s: mobilephone = %s: workphine = %s: faxphone = %s:" \
+               " email = %s: email2 = %s: email3 = %s: address2 = %s: " \
+               "phone2 = %s: notes = %s: birthday = %s: bmonth = %s:" \
+               " byear = %s: anday = %s: anmonth = %s: anyear = %s:%s" % (
+            self.id,
+            self.lastname,
+            self.firstname,
+            self.middlename,
+            self.nickname,
+            self.title,
+            self.company,
+            self.address,
+            self.homephone,
+            self.mobilephone,
+            self.workphone,
+            self.faxphone,
+            self.email,
+            self.email2,
+            self.email3,
+            self.address2,
+            self.phone2,
+            self.notes,
+            self.home,
+            self.birthday_day,
+            self.birthday_month,
+            self.birthday_year,
+            self.anniversary_day,
+            self.anniversary_month,
+            self.anniversary_year
+        )
 
 # метод сравнения
 
