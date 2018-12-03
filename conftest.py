@@ -1,19 +1,24 @@
-from fixture.application import  Application
+from fixture.application import Application
 import pytest
 
 fixture = None
 
 
 @ pytest.fixture
-def app():
-   global fixture
-   if fixture is None:
-       fixture = Application()
-   else:
+def app(request):
+    global fixture
+
+    browser = request.config.getoption("--browser")
+    address = request.config.getoption("--address")
+
+    if fixture is None:
+       fixture = Application(browser=browser,address=address)
+    else:
        if not fixture.is_valid():
-           fixture = Application()
-   fixture.session.ensure_login("admin", "secret")
-   return fixture
+           fixture = Application(browser=browser, address=address)
+
+    fixture.session.ensure_login("admin", "secret")
+    return fixture
 
 
 @pytest.fixture(scope="session", autouse=True)
@@ -24,6 +29,9 @@ def stop(request):
    request.addfinalizer(fin)
    return fixture
 
+def pytest_addoption(parser):
+    parser.addoption("--browser", action = "store", default = "chrome")
+    parser.addoption("--address", action = "store", default = "http://localhost/addressbook/")
 
 
 

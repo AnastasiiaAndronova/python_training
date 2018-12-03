@@ -3,12 +3,23 @@ from fixture.session import SessionHelper
 from fixture.group import GroupHelper
 from fixture.contact import ContactHelper
 from fixture.actions import ActionsHelper
-
+import os
 
 class Application:
+    address=""
+    def __init__(self, browser="firefox",address="http://localhost/addressbook/"):
+        self.address=address
+        if browser == "firefox":
+            self.wd = webdriver.Firefox()
+        elif browser == "chrome":
+            self.wd = webdriver.Chrome()
+        elif browser == "edge":
+            self.wd = webdriver.Edge()
+        else:
+            raise ValueError("Unrecognized browser %s" % browser)
 
-    def __init__(self):
-        self.wd = webdriver.Firefox()
+
+
         self.session = SessionHelper(self)
         self.group = GroupHelper(self)
         self.contact = ContactHelper(self)
@@ -19,7 +30,7 @@ class Application:
 
     def open_login_page(self):
         wd = self.wd
-        wd.get("http://localhost/addressbook/")
+        wd.get(self.address)
 
     def is_valid(self):
         try:
