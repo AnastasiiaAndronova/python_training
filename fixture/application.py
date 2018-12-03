@@ -3,7 +3,7 @@ from fixture.session import SessionHelper
 from fixture.group import GroupHelper
 from fixture.contact import ContactHelper
 from fixture.actions import ActionsHelper
-import os
+
 
 class Application:
     address=""
