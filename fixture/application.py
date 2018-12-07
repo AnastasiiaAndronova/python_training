@@ -6,9 +6,9 @@ from fixture.actions import ActionsHelper
 
 
 class Application:
-    address=""
-    def __init__(self, browser="firefox",address="http://localhost/addressbook/"):
-        self.address=address
+    base_url=""
+    def __init__(self, browser="firefox",base_url="http://localhost/addressbook/"):
+        self.address=base_url
         if browser == "firefox":
             self.wd = webdriver.Firefox()
         elif browser == "chrome":
