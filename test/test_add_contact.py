@@ -37,11 +37,10 @@ testdata =[Contact()] + [Contact(firstname=random_string("firstname", 20),
                       anniversary_year=str(random.randint(1950, 2000))) for x in range(5)]
 
 
-@pytest.mark.parametrize("contact", testdata, ids=[repr(x) for x in testdata])
+#@pytest.mark.parametrize("contact", testdata, ids=[repr(x) for x in testdata])
 
-def test_add_contact(app, contact):
-
-
+def test_add_contact(app, json_contact):
+    contact=json_contact
     old_contacts = app.contact.get_contact_list()
     app.contact.create(contact)
     app.contact.return_to_homepage()
