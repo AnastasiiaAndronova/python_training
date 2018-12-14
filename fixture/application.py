@@ -11,6 +11,8 @@ class Application:
         self.address=base_url
         if browser == "firefox":
             self.wd = webdriver.Firefox()
+            #открывать браузер на втором мониторе !!!
+            self.wd.set_window_position(2000,0)
         elif browser == "chrome":
             self.wd = webdriver.Chrome()
         elif browser == "edge":
