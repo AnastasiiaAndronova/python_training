@@ -39,7 +39,7 @@ testdata =[Contact()] + [Contact(firstname=random_string("firstname", 20),
 
 #@pytest.mark.parametrize("contact", testdata, ids=[repr(x) for x in testdata])
 
-def test_add_contact(app, json_contact):
+def test_add_contact_old(app, json_contact):
     contact=json_contact
     old_contacts = app.contact.get_contact_list()
     app.contact.create(contact)
@@ -48,6 +48,19 @@ def test_add_contact(app, json_contact):
     new_contacts = app.contact.get_contact_list()
     new_contacts.append(contact)
     assert sorted(new_contacts, key=Contact.id_or_max) == sorted(new_contacts, key=Contact.id_or_max)
+
+
+def test_add_contact(app, json_contact,db,check_ui):
+    contact=json_contact
+    old_contacts = db.get_contact_list()
+    app.contact.create(contact)
+    app.contact.return_to_homepage()
+    assert len(old_contacts) + 1 == len (db.get_contact_list())
+    if check_ui:
+        def clean(contact):
+            return Contact(id=contact.id, firstname=contact.firstname.strip(), lastname=contact.lastname.strip())
+        assert sorted(map(clean, db.get_contact_list()), key=Contact.id_or_max) == sorted(
+            app.contact.get_contact_list(), key=Contact.id_or_max)
 
 
 

@@ -1,5 +1,6 @@
 from model.contact import Contact
 from random import randrange
+import random
 # пока редактируем весь контакт целиком, но уже можем редактировать так же и частями
 def test_modify_first_contact(app):
     if app.contact.count() == 0:
@@ -14,7 +15,7 @@ def test_modify_first_contact(app):
     old_contacts[0] = contact
     assert sorted(old_contacts, key=Contact.id_or_max) == sorted(new_conctacts, key=Contact.id_or_max)
 
-def test_modify_some_contact(app):
+def test_modify_some_contact_old(app):
     if app.contact.count() == 0:
         app.contact.create(Contact())
     app.contact.open_homepage()
@@ -27,6 +28,25 @@ def test_modify_some_contact(app):
     new_conctacts = app.contact.get_contact_list()
     old_contacts[index] = contact
     assert sorted(old_contacts, key=Contact.id_or_max) == sorted(new_conctacts, key=Contact.id_or_max)
+
+def test_modify_some_contact(app,db,check_ui):
+
+    if len (db.get_contact_list()) == 0:
+        app.contact.create(Contact())
+    app.contact.open_homepage()
+    old_contacts = db.get_contact_list()
+    contact_edit = random.choice(old_contacts)
+
+    contact = (Contact(firstname="test first name1", lastname="test last name1"))
+    app.contact.modify_by_id(contact, contact_edit.id)
+    assert len(old_contacts) == len(db.get_contact_list())
+
+    if check_ui:
+        def clean(contact):
+            return Contact(id=contact.id, firstname=contact.firstname.strip(), lastname=contact.lastname.strip())
+
+        assert sorted(map(clean, db.get_contact_list()), key=Contact.id_or_max) == sorted(
+            app.contact.get_contact_list(), key=Contact.id_or_max)
 
     # app.contact.modify_first(Contact(firstname="test first name1",
     #                                  middlename="test middle name1",

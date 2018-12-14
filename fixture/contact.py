@@ -76,10 +76,28 @@ class ContactHelper:
         wd.find_element_by_name("update").click()
         self.contact_cache = None
 
+    def modify_by_id(self, contact, id):
+        wd = self.app.wd
+        self.app.contact.open_homepage()
+        self.open_for_edit_by_id(id)
+        self.fill_the_form(contact)
+        wd.find_element_by_name("update").click()
+        self.contact_cache = None
+
     def open_for_edit_by_index(self, index):
         wd = self.app.wd
         self.open_homepage()
         wd.find_elements_by_xpath("//img[@alt='Edit']")[index].click()
+
+
+    def open_for_edit_by_id(self, id):
+        wd = self.app.wd
+        self.open_homepage()
+        for i in wd.find_elements_by_css_selector("tr[name=entry]"):
+            if i.find_element_by_name("selected[]").get_attribute("value") == id:
+                i.find_elements_by_tag_name("td")[7].click()
+                return
+        assert False
 
     def delete_first(self):
         self.delete_by_index(0)
@@ -94,9 +112,24 @@ class ContactHelper:
         WebDriverWait(wd, 3).until(EC.presence_of_element_located((By.XPATH, "(.//*[normalize-space(text()) and normalize-space(.)='Record successful deleted'])[1]/preceding::h1[1]")))
         self.contact_cache = None
 
+    def delete_by_id(self, id):
+        wd = self.app.wd
+        self.app.contact.open_homepage()
+        self.select_by_id(id)
+        wd.find_element_by_css_selector("input[value=Delete]").click()
+        WebDriverWait(wd, 3).until(EC.alert_is_present())
+        wd.switch_to.alert.accept()
+        WebDriverWait(wd, 3).until(EC.presence_of_element_located((By.XPATH,
+                                                                   "(.//*[normalize-space(text()) and normalize-space(.)='Record successful deleted'])[1]/preceding::h1[1]")))
+        self.contact_cache = None
+
     def select_by_index(self, index):
         wd = self.app.wd
         wd.find_elements_by_name("selected[]")[index].click()
+
+    def select_by_id(self, id):
+        wd = self.app.wd
+        wd.find_element_by_id(id).click()
 
     def count(self):
         wd = self.app.wd
