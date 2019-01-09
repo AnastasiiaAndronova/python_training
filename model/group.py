@@ -28,6 +28,6 @@ class Group:
         return ( self.id is None or  other.id is None or self.id== other.id) and self.name==other.name
 
     def id_or_max(self):
-        if self.id:
-            return int(self.id)
+     #   if self.id:
+     #       return int(self.id)
         return maxsize
