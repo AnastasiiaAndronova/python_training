@@ -1,0 +1,66 @@
+{
+  "uid" : "57d0ea1b7c1621ba",
+  "name" : "test_modify_group.test_modify_some_group_old",
+  "fullName" : "test.test_modify_group.test_modify_some_group_old",
+  "historyId" : "ecd1ba4ccfac67c3d20bd255f5bcbfc7",
+  "time" : {
+    "start" : 1547237998155,
+    "stop" : 1547238015596,
+    "duration" : 17441
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "failed",
+  "statusMessage" : "AssertionError: assert [id = [34] na...= [None], ...] == [id = [34] nam...= [None], ...]\n  At index 4 diff: id = [48] name = [bla bla] header = [Test group header edited] footer = [Test group footer edited] != id = [54] name = [] header = [None] footer = [None]\n  Full diff:\n  [id = [34] name = [] header = [None] footer = [None],\n  id = [40] name = [] header = [None] footer = [None],\n  id = [41] name = [] header = [None] footer = [None],\n  id = [47] name = [] header = [None] footer = [None],\n  -  id = [48] name = [bla bla] header = [Test group header edited] footer = [Test group footer edited],...\n  \n  ...Full output truncated (68 lines hidden), use '-vv' to show",
+  "statusTrace" : "app = <fixture.application.Application object at 0x044C72F0>\n\n    def test_modify_some_group_old(app):\n        if app.group.count() == 0:\n            app.group.create(Group(name= \"First group\"))\n        old_groups = app.group.get_group_list()\n        index = randrange(len(old_groups))\n        group = (Group(name=\"bla bla\", header=\"Test group header edited\", footer=\"Test group footer edited\"))\n        group.id = old_groups[index].id\n        app.group.edit_some_group(group, index)\n        assert len(old_groups) == app.group.count()\n        new_groups = app.group.get_group_list()\n        old_groups[index] = group\n>       assert sorted(old_groups, key=Group.id_or_max) == sorted(new_groups, key=Group.id_or_max)\nE       AssertionError: assert [id = [34] na...= [None], ...] == [id = [34] nam...= [None], ...]\nE         At index 4 diff: id = [48] name = [bla bla] header = [Test group header edited] footer = [Test group footer edited] != id = [54] name = [] header = [None] footer = [None]\nE         Full diff:\nE         [id = [34] name = [] header = [None] footer = [None],\nE         id = [40] name = [] header = [None] footer = [None],\nE         id = [41] name = [] header = [None] footer = [None],\nE         id = [47] name = [] header = [None] footer = [None],\nE         -  id = [48] name = [bla bla] header = [Test group header edited] footer = [Test group footer edited],...\nE         \nE         ...Full output truncated (68 lines hidden), use '-vv' to show\n\ntest\\test_modify_group.py:31: AssertionError",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "host",
+    "value" : "Creator"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "thread",
+    "value" : "15704-MainThread"
+  }, {
+    "name" : "suite",
+    "value" : "test"
+  }, {
+    "name" : "testClass",
+    "value" : "test"
+  }, {
+    "name" : "testMethod",
+    "value" : "test_modify_group.test_modify_some_group_old"
+  }, {
+    "name" : "package",
+    "value" : "test"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "57d0ea1b7c1621ba.json",
+  "parameterValues" : [ ]
+}

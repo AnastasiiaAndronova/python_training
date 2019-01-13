@@ -1,0 +1,66 @@
+{
+  "uid" : "fd1c23d37d950a4a",
+  "name" : "test_db_matches_ui.test_group_list",
+  "fullName" : "test.test_db_matches_ui.test_group_list",
+  "historyId" : "b71997f98d56bcb10f5b639e95e3177f",
+  "time" : {
+    "start" : 1547237554674,
+    "stop" : 1547237562101,
+    "duration" : 7427
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "failed",
+  "statusMessage" : "AssertionError: assert [id = [33] na...= [None], ...] == [id = [1] name...= [None], ...]\n  At index 0 diff: id = [33] name = [] header = [None] footer = [None] != id = [1] name = [New test group edited] header = [None] footer = [None]\n  Full diff:\n  + [id = [1] name = [New test group edited] header = [None] footer = [None],\n  +  id = [2] name = [name CH] header = [None] footer = [None],\n  +  id = [3] name = [namef8] header = [None] footer = [None],\n  +  id = [4] name = [name5] header = [None] footer = [None],\n  +  id = [9] name = [name CH] header = [None] footer = [None],...\n  \n  ...Full output truncated (138 lines hidden), use '-vv' to show",
+  "statusTrace" : "app = <fixture.application.Application object at 0x044C72F0>, db = <fixture.db.DbFixture object at 0x045662B0>\n\n    def test_group_list(app,db):\n        ui_list=app.group.get_group_list()\n        def clean(group):\n            return Group(id=group.id,name=group.name.strip())\n        db_list=map(clean,db.get_group_list())\n>       assert  sorted(ui_list,key=Group.id_or_max) == sorted(db_list,key=Group.id_or_max)\nE       AssertionError: assert [id = [33] na...= [None], ...] == [id = [1] name...= [None], ...]\nE         At index 0 diff: id = [33] name = [] header = [None] footer = [None] != id = [1] name = [New test group edited] header = [None] footer = [None]\nE         Full diff:\nE         + [id = [1] name = [New test group edited] header = [None] footer = [None],\nE         +  id = [2] name = [name CH] header = [None] footer = [None],\nE         +  id = [3] name = [namef8] header = [None] footer = [None],\nE         +  id = [4] name = [name5] header = [None] footer = [None],\nE         +  id = [9] name = [name CH] header = [None] footer = [None],...\nE         \nE         ...Full output truncated (138 lines hidden), use '-vv' to show\n\ntest\\test_db_matches_ui.py:8: AssertionError",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "host",
+    "value" : "Creator"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "thread",
+    "value" : "15704-MainThread"
+  }, {
+    "name" : "suite",
+    "value" : "test"
+  }, {
+    "name" : "testClass",
+    "value" : "test"
+  }, {
+    "name" : "testMethod",
+    "value" : "test_db_matches_ui.test_group_list"
+  }, {
+    "name" : "package",
+    "value" : "test"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "fd1c23d37d950a4a.json",
+  "parameterValues" : [ ]
+}

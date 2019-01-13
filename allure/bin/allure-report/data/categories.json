@@ -1,0 +1,105 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "name" : "categories",
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "AssertionError: assert 'emailZTVKema...\\x00@8OKZ0k*i' == 'emailZTVKemai...]FYj@8OKZ0k*i'\n  - emailZTVKemail2qHG0dOq!@%\"Hu3f>email3U@qb]FYj#x00@8OKZ0k*i\n  ?                                              -\n  + emailZTVKemail2qHG0dOq!@%\"Hu3f>email3U@qb]FYj@8OKZ0k*i",
+      "children" : [ {
+        "name" : "test_check_contact.test_check_contact",
+        "uid" : "6426873c345522d",
+        "parentUid" : "b6efd0898ccba4a0cf81c3dba29ced2a",
+        "status" : "failed",
+        "time" : {
+          "start" : 1547237495722,
+          "stop" : 1547237544605,
+          "duration" : 48883
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "b6efd0898ccba4a0cf81c3dba29ced2a"
+    }, {
+      "name" : "AssertionError: assert 'emailU53yZ~%...\"3dF[9 :QN`$A' == 'emailU53yZ~%F...3 \\\\_@pyEAz n'\n  - emailU53yZ~%F,*YNM6x=`\"@}# W _4\n  ?                       ---------\n  + emailU53yZ~%F,*YNM6x=`\n    email2H |QGdYBZyVIX7 $}\n  - email3 \\_@pyEAz n\"3dF[9 :QN`$A\n  + email3 \\_@pyEAz n",
+      "children" : [ {
+        "name" : "test_contact_info.test_some_contact_has_same_data_in_edit_and_home_page",
+        "uid" : "4864f346aac5b909",
+        "parentUid" : "26d4f0174bd56000a680a4bf03d7fff2",
+        "status" : "failed",
+        "time" : {
+          "start" : 1547237544606,
+          "stop" : 1547237554343,
+          "duration" : 9737
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "26d4f0174bd56000a680a4bf03d7fff2"
+    }, {
+      "name" : "AssertionError: assert 'homephone~u]...honeKKphone2S' == 'homephone~u]h...neKK\\nphone2S'\n  - homephone~u]hOXmobilephone:oGygmGworkphoneKKphone2S\n  + homephone~u]hOX\n  + mobilephone:oGygmG\n  + workphoneKK\n  + phone2S",
+      "children" : [ {
+        "name" : "test_contact_info.test_check_all_contacts",
+        "uid" : "aa6a3c7eac82d37b",
+        "parentUid" : "d4b4796eb3ef490d56c50dd283290275",
+        "status" : "failed",
+        "time" : {
+          "start" : 1547237554344,
+          "stop" : 1547237554672,
+          "duration" : 328
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "d4b4796eb3ef490d56c50dd283290275"
+    }, {
+      "name" : "AssertionError: assert [id = [33] na...= [None], ...] == [id = [1] name...= [None], ...]\n  At index 0 diff: id = [33] name = [] header = [None] footer = [None] != id = [1] name = [New test group edited] header = [None] footer = [None]\n  Full diff:\n  + [id = [1] name = [New test group edited] header = [None] footer = [None],\n  +  id = [2] name = [name CH] header = [None] footer = [None],\n  +  id = [3] name = [namef8] header = [None] footer = [None],\n  +  id = [4] name = [name5] header = [None] footer = [None],\n  +  id = [9] name = [name CH] header = [None] footer = [None],...\n  \n  ...Full output truncated (138 lines hidden), use '-vv' to show",
+      "children" : [ {
+        "name" : "test_db_matches_ui.test_group_list",
+        "uid" : "fd1c23d37d950a4a",
+        "parentUid" : "d10364025690ca9ff2cf1ee69f63ad13",
+        "status" : "failed",
+        "time" : {
+          "start" : 1547237554674,
+          "stop" : 1547237562101,
+          "duration" : 7427
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "d10364025690ca9ff2cf1ee69f63ad13"
+    }, {
+      "name" : "AssertionError: assert [id = [33] na...= [None], ...] == [id = [34] nam...= [None], ...]\n  At index 0 diff: id = [33] name = [New test group edited] header = [Test group header edited] footer = [Test group footer edited] != id = [34] name = [] header = [None] footer = [None]\n  Full diff:\n  - [id = [33] name = [New test group edited] header = [Test group header edited] footer = [Test group footer edited],\n  -  id = [34] name = [] header = [None] footer = [None],\n  ? ^\n  + [id = [34] name = [] header = [None] footer = [None],\n  ? ^...\n  \n  ...Full output truncated (74 lines hidden), use '-vv' to show",
+      "children" : [ {
+        "name" : "test_modify_group.test_modify_first_group",
+        "uid" : "b5c17f8e19e699e0",
+        "parentUid" : "525c6cc257ba3aafab007ddeeba21445",
+        "status" : "failed",
+        "time" : {
+          "start" : 1547237973572,
+          "stop" : 1547237998154,
+          "duration" : 24582
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "525c6cc257ba3aafab007ddeeba21445"
+    }, {
+      "name" : "AssertionError: assert [id = [34] na...= [None], ...] == [id = [34] nam...= [None], ...]\n  At index 4 diff: id = [48] name = [bla bla] header = [Test group header edited] footer = [Test group footer edited] != id = [54] name = [] header = [None] footer = [None]\n  Full diff:\n  [id = [34] name = [] header = [None] footer = [None],\n  id = [40] name = [] header = [None] footer = [None],\n  id = [41] name = [] header = [None] footer = [None],\n  id = [47] name = [] header = [None] footer = [None],\n  -  id = [48] name = [bla bla] header = [Test group header edited] footer = [Test group footer edited],...\n  \n  ...Full output truncated (68 lines hidden), use '-vv' to show",
+      "children" : [ {
+        "name" : "test_modify_group.test_modify_some_group_old",
+        "uid" : "57d0ea1b7c1621ba",
+        "parentUid" : "207b9af67f1f9f9f0d96ab95b3c89625",
+        "status" : "failed",
+        "time" : {
+          "start" : 1547237998155,
+          "stop" : 1547238015596,
+          "duration" : 17441
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "207b9af67f1f9f9f0d96ab95b3c89625"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  } ]
+}

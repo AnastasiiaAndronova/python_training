@@ -1,0 +1,60 @@
+{
+  "uid" : "de83a8c28b53f30d",
+  "name" : "test_delete_group.test_delete_some_group",
+  "fullName" : "test.test_delete_group.test_delete_some_group",
+  "historyId" : "863bdc5a9a9fa0338731becd45713dd0",
+  "time" : {
+    "start" : 1547237711985,
+    "stop" : 1547237712847,
+    "duration" : 862
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "host",
+    "value" : "Creator"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "thread",
+    "value" : "15704-MainThread"
+  }, {
+    "name" : "suite",
+    "value" : "test"
+  }, {
+    "name" : "testClass",
+    "value" : "test"
+  }, {
+    "name" : "testMethod",
+    "value" : "test_delete_group.test_delete_some_group"
+  }, {
+    "name" : "package",
+    "value" : "test"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "de83a8c28b53f30d.json",
+  "parameterValues" : [ ]
+}

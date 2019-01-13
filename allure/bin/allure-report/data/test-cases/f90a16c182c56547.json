@@ -1,0 +1,60 @@
+{
+  "uid" : "f90a16c182c56547",
+  "name" : "test_add_contact.test_add_contact_old[id = None:, lastname = lastname85{E+I: firstname = firstname l: middlename = middlenameI: nickname = nicknameP\\\\k6?SdxG(fh; : title = titlet b&a<: company = companyr  ,H\" t: address =  address +hH/ j+5v D_ni W!d$5Wy4 8*: homephone = homephone3: mobilephone = mobilephone K. : workphine = workphoneR j :hbo: faxphone = faxphone7~i: email = emailJ0Th}>9: email2 = email2: email3 = email3xO*+~F\"ECEDI`-?9k0GP>Vxs2})@+: address2 = address2[@64p9]]sT%)[: phone2 = phone2: notes = notesm%g *qGNvl<: birthday = homel: bmonth = 17: byear = July: anday = 1953: anmonth = 10: anyear = July:1977]",
+  "fullName" : "test.test_add_contact.test_add_contact_old[id = None:, lastname = lastname85{E+I: firstname = firstname l: middlename = middlenameI: nickname = nicknameP\\\\k6?SdxG(fh; : title = titlet b&a<: company = companyr  ,H\" t: address =  address +hH/ j+5v D_ni W!d$5Wy4 8*: homephone = homephone3: mobilephone = mobilephone K. : workphine = workphoneR j :hbo: faxphone = faxphone7~i: email = emailJ0Th}>9: email2 = email2: email3 = email3xO*+~F\"ECEDI`-?9k0GP>Vxs2})@+: address2 = address2[@64p9]]sT%)[: phone2 = phone2: notes = notesm%g *qGNvl<: birthday = homel: bmonth = 17: byear = July: anday = 1953: anmonth = 10: anyear = July:1977]",
+  "historyId" : "c79a176afa0b4d6db1d44ff31616302",
+  "time" : {
+    "start" : 1547237321699,
+    "stop" : 1547237370172,
+    "duration" : 48473
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "host",
+    "value" : "Creator"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "thread",
+    "value" : "15704-MainThread"
+  }, {
+    "name" : "suite",
+    "value" : "test"
+  }, {
+    "name" : "testClass",
+    "value" : "test"
+  }, {
+    "name" : "testMethod",
+    "value" : "test_add_contact.test_add_contact_old[id = None:, lastname = lastname85{E+I: firstname = firstname l: middlename = middlenameI: nickname = nicknameP\\\\k6?SdxG(fh; : title = titlet b&a<: company = companyr  ,H\" t: address =  address +hH/ j+5v D_ni W!d$5Wy4 8*: homephone = homephone3: mobilephone = mobilephone K. : workphine = workphoneR j :hbo: faxphone = faxphone7~i: email = emailJ0Th}>9: email2 = email2: email3 = email3xO*+~F\"ECEDI`-?9k0GP>Vxs2})@+: address2 = address2[@64p9]]sT%)[: phone2 = phone2: notes = notesm%g *qGNvl<: birthday = homel: bmonth = 17: byear = July: anday = 1953: anmonth = 10: anyear = July:1977]"
+  }, {
+    "name" : "package",
+    "value" : "test"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "f90a16c182c56547.json",
+  "parameterValues" : [ ]
+}

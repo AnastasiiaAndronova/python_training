@@ -1,0 +1,60 @@
+{
+  "uid" : "13c54e125841e781",
+  "name" : "test_modify_contact.test_modify_some_contact_old",
+  "fullName" : "test.test_modify_contact.test_modify_some_contact_old",
+  "historyId" : "5cff1bf1de8ed55ffd2524bc2e21d5de",
+  "time" : {
+    "start" : 1547237866562,
+    "stop" : 1547237960383,
+    "duration" : 93821
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "host",
+    "value" : "Creator"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "thread",
+    "value" : "15704-MainThread"
+  }, {
+    "name" : "suite",
+    "value" : "test"
+  }, {
+    "name" : "testClass",
+    "value" : "test"
+  }, {
+    "name" : "testMethod",
+    "value" : "test_modify_contact.test_modify_some_contact_old"
+  }, {
+    "name" : "package",
+    "value" : "test"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "13c54e125841e781.json",
+  "parameterValues" : [ ]
+}

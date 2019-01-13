@@ -1,0 +1,60 @@
+{
+  "uid" : "869129f09e58b999",
+  "name" : "test_add_group.test_add_group[id = [None] name = [name CH] header = [headerO81t vKG  0sIkOIA11] footer = [footerv ZX G w]]",
+  "fullName" : "test.test_add_group.test_add_group[id = [None] name = [name CH] header = [headerO81t vKG  0sIkOIA11] footer = [footerv ZX G w]]",
+  "historyId" : "dfa54f696db58fd4c4bb2e7a33142986",
+  "time" : {
+    "start" : 1547237486971,
+    "stop" : 1547237488424,
+    "duration" : 1453
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "host",
+    "value" : "Creator"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "thread",
+    "value" : "15704-MainThread"
+  }, {
+    "name" : "suite",
+    "value" : "test"
+  }, {
+    "name" : "testClass",
+    "value" : "test"
+  }, {
+    "name" : "testMethod",
+    "value" : "test_add_group.test_add_group[id = [None] name = [name CH] header = [headerO81t vKG  0sIkOIA11] footer = [footerv ZX G w]]"
+  }, {
+    "name" : "package",
+    "value" : "test"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "869129f09e58b999.json",
+  "parameterValues" : [ ]
+}

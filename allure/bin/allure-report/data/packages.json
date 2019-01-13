@@ -1,0 +1,405 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "name" : "packages",
+  "children" : [ {
+    "name" : "test",
+    "children" : [ {
+      "name" : "test_add_contact.test_add_contact_old[id = None:, lastname = None: firstname = None: middlename = None: nickname = None: title = None: company = None: address =  None: homephone = None: mobilephone = None: workphine = None: faxphone = None: email = None: email2 = None: email3 = None: address2 = None: phone2 = None: notes = None: birthday = None: bmonth = None: byear = None: anday = None: anmonth = None: anyear = None:None]",
+      "uid" : "3d527a6ad34c88f1",
+      "parentUid" : "d662795e8d349f9b5595bf62f43ea7ae",
+      "status" : "passed",
+      "time" : {
+        "start" : 1547237196727,
+        "stop" : 1547237222338,
+        "duration" : 25611
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "test_add_contact.test_add_contact_old[id = None:, lastname = lastnameh) ty: firstname = firstname+ 2/(Q^ (0 ;0%O*: middlename = middlename xA-jwXTv@C$ : nickname = nickname. HgIY .G 1cRq+eo: title = titletGgt!: company = company %U)1  Oa{ : address =  address|]}0:,Iv: homephone = homephone<2: mobilephone = mobilephone[)M : workphine = workphoneC+b u: faxphone = faxphoneSAh : email = emailZTVK: email2 = email2qHG0dOq!@%\"Hu3f>: email3 = email3U@qb]FY j(\\\\0@8 OKZ0k *i: address2 = address2FnBRDe;1` t{8A: phone2 = phone2: notes = notesi#5^qS (J6MVLvRL/Q:j0:JDtv: $X_%] L 0V: birthday = homeL L~Zt:K: bmonth = 5: byear = February: anday = 1960: anmonth = 9: anyear = September:1989]",
+      "uid" : "c068ed7c38b7429c",
+      "parentUid" : "d662795e8d349f9b5595bf62f43ea7ae",
+      "status" : "passed",
+      "time" : {
+        "start" : 1547237222339,
+        "stop" : 1547237249926,
+        "duration" : 27587
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "test_add_contact.test_add_contact_old[id = None:, lastname = lastname VT C-/2#^aEqk[: firstname = firstname0 5JE~)|rM w( nT&\"E: middlename = middlenamen |8,P\"|w6vZ{: nickname = nickname\"gn+)9( **N5# #^OG: title = title: company = company6yA: address =  addressWBnu : homephone = homephoneNt | @kw: mobilephone = mobilephoneU?}e: workphine = workphone`cd; ln~`: faxphone = faxphoneZ: email = emailU53yZ~%F,*YNM6x=`\"@}# W _4: email2 = email2H |QGdYBZyVIX7 $}: email3 = email3 \\\\_@pyEAz n\"3dF[9 :QN`$A: address2 = address2 57(j6w5J<x`NLz:F erP_7iO#i9b: phone2 = phone2~{m: notes = notesp;/ &8LA Lr: birthday = home: bmonth = 8: byear = February: anday = 1977: anmonth = 20: anyear = December:1989]",
+      "uid" : "4e66c399a8f838b",
+      "parentUid" : "d662795e8d349f9b5595bf62f43ea7ae",
+      "status" : "passed",
+      "time" : {
+        "start" : 1547237249927,
+        "stop" : 1547237282574,
+        "duration" : 32647
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "test_add_contact.test_add_contact_old[id = None:, lastname = lastname!@Q+8: firstname = firstnameiK-DuSs~: middlename = middlenamen#Bf-$: nickname = nicknametRms v}(B7[e O : title = title)i$J*Wkm6g1Q@4Q: company = companym{Tl: address =  addressD*nLbc*G + iZ?c?_=NOinj iFrcwBdZ;`2u: homephone = homephone~u ]hOX ): mobilephone = mobilephone:oGygmG: workphine = workphoneKK: faxphone = faxphonen_: email = email : email2 = email2~c3L2 f^\"Wn\"|d  \"hM!9E: email3 = email3PiC  `2cT$otVJ: address2 = address2{0PG ?V#FdU267Ry$Yn?7 ;[Z@  : phone2 = phone2S: notes = notes d7\"TV&  WS_+)ZI%+zz J7b 97: birthday = home c4T,Uxhe: bmonth = 5: byear = March: anday = 1969: anmonth = 23: anyear = February:1980]",
+      "uid" : "32cd6ac1c22876b9",
+      "parentUid" : "d662795e8d349f9b5595bf62f43ea7ae",
+      "status" : "passed",
+      "time" : {
+        "start" : 1547237282575,
+        "stop" : 1547237321698,
+        "duration" : 39123
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "test_add_contact.test_add_contact_old[id = None:, lastname = lastname85{E+I: firstname = firstname l: middlename = middlenameI: nickname = nicknameP\\\\k6?SdxG(fh; : title = titlet b&a<: company = companyr  ,H\" t: address =  address +hH/ j+5v D_ni W!d$5Wy4 8*: homephone = homephone3: mobilephone = mobilephone K. : workphine = workphoneR j :hbo: faxphone = faxphone7~i: email = emailJ0Th}>9: email2 = email2: email3 = email3xO*+~F\"ECEDI`-?9k0GP>Vxs2})@+: address2 = address2[@64p9]]sT%)[: phone2 = phone2: notes = notesm%g *qGNvl<: birthday = homel: bmonth = 17: byear = July: anday = 1953: anmonth = 10: anyear = July:1977]",
+      "uid" : "f90a16c182c56547",
+      "parentUid" : "d662795e8d349f9b5595bf62f43ea7ae",
+      "status" : "passed",
+      "time" : {
+        "start" : 1547237321699,
+        "stop" : 1547237370172,
+        "duration" : 48473
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "test_add_contact.test_add_contact_old[id = None:, lastname = lastname : firstname = firstnameW K9_ZFpg8Jhj &: middlename = middlename$Dq)4 ,W$3&zUF9: nickname = nickname4&W0 Foi,/ZI: title = title:5=s9:\\\\  Q: company = companyj|,<ER.OO4: address =  addressI[d- tUbV=mp_J;kw0E@;: homephone = homephoneQ3=: mobilephone = mobilephone3)r[rB?I: workphine = workphoneOA HzE: faxphone = faxphoneUGJ)4^q: email = email&2e!?>? rMW)&2Ym^tO:s_j_ljF 9: email2 = email2;0mW8o^/%hK*[YGY&Mp)S@( : email3 = email3: address2 = address2ZLBr ?sU`|F >< T r0UX[MK@cHkR aF@l 6ooY: phone2 = phone2qLxA: notes = notesW:V0PA lc  &\\\\T5: birthday = home1M : bmonth = 23: byear = April: anday = 1999: anmonth = 17: anyear = June:1969]",
+      "uid" : "fb9251f2ff9aad33",
+      "parentUid" : "d662795e8d349f9b5595bf62f43ea7ae",
+      "status" : "passed",
+      "time" : {
+        "start" : 1547237370173,
+        "stop" : 1547237424191,
+        "duration" : 54018
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "test_add_contact.test_add_contact[id = None:, lastname = None: firstname = None: middlename = None: nickname = None: title = None: company = None: address =  None: homephone = None: mobilephone = None: workphine = None: faxphone = None: email = None: email2 = None: email3 = None: address2 = None: phone2 = None: notes = None: birthday = None: bmonth = None: byear = None: anday = None: anmonth = None: anyear = None:None]",
+      "uid" : "91c3110c4c3ac16f",
+      "parentUid" : "d662795e8d349f9b5595bf62f43ea7ae",
+      "status" : "passed",
+      "time" : {
+        "start" : 1547237424193,
+        "stop" : 1547237426868,
+        "duration" : 2675
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "test_add_contact.test_add_contact[id = None:, lastname = lastnameh) ty: firstname = firstname+ 2/(Q^ (0 ;0%O*: middlename = middlename xA-jwXTv@C$ : nickname = nickname. HgIY .G 1cRq+eo: title = titletGgt!: company = company %U)1  Oa{ : address =  address|]}0:,Iv: homephone = homephone<2: mobilephone = mobilephone[)M : workphine = workphoneC+b u: faxphone = faxphoneSAh : email = emailZTVK: email2 = email2qHG0dOq!@%\"Hu3f>: email3 = email3U@qb]FY j(\\\\0@8 OKZ0k *i: address2 = address2FnBRDe;1` t{8A: phone2 = phone2: notes = notesi#5^qS (J6MVLvRL/Q:j0:JDtv: $X_%] L 0V: birthday = homeL L~Zt:K: bmonth = 5: byear = February: anday = 1960: anmonth = 9: anyear = September:1989]",
+      "uid" : "9c4d1eea672a48cb",
+      "parentUid" : "d662795e8d349f9b5595bf62f43ea7ae",
+      "status" : "passed",
+      "time" : {
+        "start" : 1547237426869,
+        "stop" : 1547237437660,
+        "duration" : 10791
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "test_add_contact.test_add_contact[id = None:, lastname = lastname VT C-/2#^aEqk[: firstname = firstname0 5JE~)|rM w( nT&\"E: middlename = middlenamen |8,P\"|w6vZ{: nickname = nickname\"gn+)9( **N5# #^OG: title = title: company = company6yA: address =  addressWBnu : homephone = homephoneNt | @kw: mobilephone = mobilephoneU?}e: workphine = workphone`cd; ln~`: faxphone = faxphoneZ: email = emailU53yZ~%F,*YNM6x=`\"@}# W _4: email2 = email2H |QGdYBZyVIX7 $}: email3 = email3 \\\\_@pyEAz n\"3dF[9 :QN`$A: address2 = address2 57(j6w5J<x`NLz:F erP_7iO#i9b: phone2 = phone2~{m: notes = notesp;/ &8LA Lr: birthday = home: bmonth = 8: byear = February: anday = 1977: anmonth = 20: anyear = December:1989]",
+      "uid" : "a9b6a4b3c79918b9",
+      "parentUid" : "d662795e8d349f9b5595bf62f43ea7ae",
+      "status" : "passed",
+      "time" : {
+        "start" : 1547237437661,
+        "stop" : 1547237448904,
+        "duration" : 11243
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "test_add_contact.test_add_contact[id = None:, lastname = lastname!@Q+8: firstname = firstnameiK-DuSs~: middlename = middlenamen#Bf-$: nickname = nicknametRms v}(B7[e O : title = title)i$J*Wkm6g1Q@4Q: company = companym{Tl: address =  addressD*nLbc*G + iZ?c?_=NOinj iFrcwBdZ;`2u: homephone = homephone~u ]hOX ): mobilephone = mobilephone:oGygmG: workphine = workphoneKK: faxphone = faxphonen_: email = email : email2 = email2~c3L2 f^\"Wn\"|d  \"hM!9E: email3 = email3PiC  `2cT$otVJ: address2 = address2{0PG ?V#FdU267Ry$Yn?7 ;[Z@  : phone2 = phone2S: notes = notes d7\"TV&  WS_+)ZI%+zz J7b 97: birthday = home c4T,Uxhe: bmonth = 5: byear = March: anday = 1969: anmonth = 23: anyear = February:1980]",
+      "uid" : "3335a0bcbbfaf152",
+      "parentUid" : "d662795e8d349f9b5595bf62f43ea7ae",
+      "status" : "passed",
+      "time" : {
+        "start" : 1547237448905,
+        "stop" : 1547237460179,
+        "duration" : 11274
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "test_add_contact.test_add_contact[id = None:, lastname = lastname85{E+I: firstname = firstname l: middlename = middlenameI: nickname = nicknameP\\\\k6?SdxG(fh; : title = titlet b&a<: company = companyr  ,H\" t: address =  address +hH/ j+5v D_ni W!d$5Wy4 8*: homephone = homephone3: mobilephone = mobilephone K. : workphine = workphoneR j :hbo: faxphone = faxphone7~i: email = emailJ0Th}>9: email2 = email2: email3 = email3xO*+~F\"ECEDI`-?9k0GP>Vxs2})@+: address2 = address2[@64p9]]sT%)[: phone2 = phone2: notes = notesm%g *qGNvl<: birthday = homel: bmonth = 17: byear = July: anday = 1953: anmonth = 10: anyear = July:1977]",
+      "uid" : "7160434c4a5f1ca4",
+      "parentUid" : "d662795e8d349f9b5595bf62f43ea7ae",
+      "status" : "passed",
+      "time" : {
+        "start" : 1547237460180,
+        "stop" : 1547237471732,
+        "duration" : 11552
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "test_add_contact.test_add_contact[id = None:, lastname = lastname : firstname = firstnameW K9_ZFpg8Jhj &: middlename = middlename$Dq)4 ,W$3&zUF9: nickname = nickname4&W0 Foi,/ZI: title = title:5=s9:\\\\  Q: company = companyj|,<ER.OO4: address =  addressI[d- tUbV=mp_J;kw0E@;: homephone = homephoneQ3=: mobilephone = mobilephone3)r[rB?I: workphine = workphoneOA HzE: faxphone = faxphoneUGJ)4^q: email = email&2e!?>? rMW)&2Ym^tO:s_j_ljF 9: email2 = email2;0mW8o^/%hK*[YGY&Mp)S@( : email3 = email3: address2 = address2ZLBr ?sU`|F >< T r0UX[MK@cHkR aF@l 6ooY: phone2 = phone2qLxA: notes = notesW:V0PA lc  &\\\\T5: birthday = home1M : bmonth = 23: byear = April: anday = 1999: anmonth = 17: anyear = June:1969]",
+      "uid" : "b105164c866a7e21",
+      "parentUid" : "d662795e8d349f9b5595bf62f43ea7ae",
+      "status" : "passed",
+      "time" : {
+        "start" : 1547237471733,
+        "stop" : 1547237483599,
+        "duration" : 11866
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "test_add_group.test_add_group[id = [None] name = [] header = [] footer = []]",
+      "uid" : "e503cd4d0330f057",
+      "parentUid" : "d662795e8d349f9b5595bf62f43ea7ae",
+      "status" : "passed",
+      "time" : {
+        "start" : 1547237483600,
+        "stop" : 1547237486970,
+        "duration" : 3370
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "test_add_group.test_add_group[id = [None] name = [name CH] header = [headerO81t vKG  0sIkOIA11] footer = [footerv ZX G w]]",
+      "uid" : "869129f09e58b999",
+      "parentUid" : "d662795e8d349f9b5595bf62f43ea7ae",
+      "status" : "passed",
+      "time" : {
+        "start" : 1547237486971,
+        "stop" : 1547237488424,
+        "duration" : 1453
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "test_add_group.test_add_group[id = [None] name = [namef8] header = [headerVqkUmLR] footer = [footerAIYZrR 2rmp]]",
+      "uid" : "e9fe1156ab178d2d",
+      "parentUid" : "d662795e8d349f9b5595bf62f43ea7ae",
+      "status" : "passed",
+      "time" : {
+        "start" : 1547237488425,
+        "stop" : 1547237489946,
+        "duration" : 1521
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "test_add_group.test_add_group[id = [None] name = [name5] header = [headerII8sDJO63E4vI] footer = [footerTyH S M]]",
+      "uid" : "5b3686a66020137b",
+      "parentUid" : "d662795e8d349f9b5595bf62f43ea7ae",
+      "status" : "passed",
+      "time" : {
+        "start" : 1547237489948,
+        "stop" : 1547237491466,
+        "duration" : 1518
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "test_add_group.test_add_group[id = [None] name = [name] header = [headersvFPhjiW0 9P3rstezL] footer = [footer c9EOnH4 ]]",
+      "uid" : "ea8d96c53186c2fa",
+      "parentUid" : "d662795e8d349f9b5595bf62f43ea7ae",
+      "status" : "passed",
+      "time" : {
+        "start" : 1547237491468,
+        "stop" : 1547237492912,
+        "duration" : 1444
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "test_add_group.test_add_group[id = [None] name = [name6] header = [headerPJvDnKH] footer = [footerqPrC sd hZn]]",
+      "uid" : "9e3af3a98df35dbe",
+      "parentUid" : "d662795e8d349f9b5595bf62f43ea7ae",
+      "status" : "passed",
+      "time" : {
+        "start" : 1547237492912,
+        "stop" : 1547237494305,
+        "duration" : 1393
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "test_add_group.test_add_empty_group",
+      "uid" : "27a184033a1c04f5",
+      "parentUid" : "d662795e8d349f9b5595bf62f43ea7ae",
+      "status" : "passed",
+      "time" : {
+        "start" : 1547237494306,
+        "stop" : 1547237495721,
+        "duration" : 1415
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "test_check_contact.test_check_contact",
+      "uid" : "6426873c345522d",
+      "parentUid" : "d662795e8d349f9b5595bf62f43ea7ae",
+      "status" : "failed",
+      "time" : {
+        "start" : 1547237495722,
+        "stop" : 1547237544605,
+        "duration" : 48883
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "test_contact_info.test_some_contact_has_same_data_in_edit_and_home_page",
+      "uid" : "4864f346aac5b909",
+      "parentUid" : "d662795e8d349f9b5595bf62f43ea7ae",
+      "status" : "failed",
+      "time" : {
+        "start" : 1547237544606,
+        "stop" : 1547237554343,
+        "duration" : 9737
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "test_contact_info.test_check_all_contacts",
+      "uid" : "aa6a3c7eac82d37b",
+      "parentUid" : "d662795e8d349f9b5595bf62f43ea7ae",
+      "status" : "failed",
+      "time" : {
+        "start" : 1547237554344,
+        "stop" : 1547237554672,
+        "duration" : 328
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "test_db_matches_ui.test_group_list",
+      "uid" : "fd1c23d37d950a4a",
+      "parentUid" : "d662795e8d349f9b5595bf62f43ea7ae",
+      "status" : "failed",
+      "time" : {
+        "start" : 1547237554674,
+        "stop" : 1547237562101,
+        "duration" : 7427
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "test_delete_contact.test_delete_first_contact",
+      "uid" : "bd367b074330ebe3",
+      "parentUid" : "d662795e8d349f9b5595bf62f43ea7ae",
+      "status" : "passed",
+      "time" : {
+        "start" : 1547237562102,
+        "stop" : 1547237630967,
+        "duration" : 68865
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "test_delete_contact.test_delete_some_contact_old",
+      "uid" : "ee777ff9b06e8fd3",
+      "parentUid" : "d662795e8d349f9b5595bf62f43ea7ae",
+      "status" : "passed",
+      "time" : {
+        "start" : 1547237630968,
+        "stop" : 1547237708382,
+        "duration" : 77414
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "test_delete_contact.test_delete_some_contact",
+      "uid" : "cd478aa2162e0164",
+      "parentUid" : "d662795e8d349f9b5595bf62f43ea7ae",
+      "status" : "passed",
+      "time" : {
+        "start" : 1547237708383,
+        "stop" : 1547237711984,
+        "duration" : 3601
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "test_delete_group.test_delete_some_group",
+      "uid" : "de83a8c28b53f30d",
+      "parentUid" : "d662795e8d349f9b5595bf62f43ea7ae",
+      "status" : "passed",
+      "time" : {
+        "start" : 1547237711985,
+        "stop" : 1547237712847,
+        "duration" : 862
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "test_modify_contact.test_modify_first_contact",
+      "uid" : "f00a2890ad4cc566",
+      "parentUid" : "d662795e8d349f9b5595bf62f43ea7ae",
+      "status" : "passed",
+      "time" : {
+        "start" : 1547237712847,
+        "stop" : 1547237866561,
+        "duration" : 153714
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "test_modify_contact.test_modify_some_contact_old",
+      "uid" : "13c54e125841e781",
+      "parentUid" : "d662795e8d349f9b5595bf62f43ea7ae",
+      "status" : "passed",
+      "time" : {
+        "start" : 1547237866562,
+        "stop" : 1547237960383,
+        "duration" : 93821
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "test_modify_contact.test_modify_some_contact",
+      "uid" : "6ec02e160189a555",
+      "parentUid" : "d662795e8d349f9b5595bf62f43ea7ae",
+      "status" : "passed",
+      "time" : {
+        "start" : 1547237960384,
+        "stop" : 1547237973571,
+        "duration" : 13187
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "test_modify_group.test_modify_first_group",
+      "uid" : "b5c17f8e19e699e0",
+      "parentUid" : "d662795e8d349f9b5595bf62f43ea7ae",
+      "status" : "failed",
+      "time" : {
+        "start" : 1547237973572,
+        "stop" : 1547237998154,
+        "duration" : 24582
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "test_modify_group.test_modify_some_group_old",
+      "uid" : "57d0ea1b7c1621ba",
+      "parentUid" : "d662795e8d349f9b5595bf62f43ea7ae",
+      "status" : "failed",
+      "time" : {
+        "start" : 1547237998155,
+        "stop" : 1547238015596,
+        "duration" : 17441
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "test_modify_group.test_modify_some_group_db",
+      "uid" : "6f776d0a114a32ca",
+      "parentUid" : "d662795e8d349f9b5595bf62f43ea7ae",
+      "status" : "passed",
+      "time" : {
+        "start" : 1547238015597,
+        "stop" : 1547238017634,
+        "duration" : 2037
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "d662795e8d349f9b5595bf62f43ea7ae"
+  } ]
+}

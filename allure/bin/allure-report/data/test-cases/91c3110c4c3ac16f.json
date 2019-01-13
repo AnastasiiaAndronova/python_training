@@ -1,0 +1,60 @@
+{
+  "uid" : "91c3110c4c3ac16f",
+  "name" : "test_add_contact.test_add_contact[id = None:, lastname = None: firstname = None: middlename = None: nickname = None: title = None: company = None: address =  None: homephone = None: mobilephone = None: workphine = None: faxphone = None: email = None: email2 = None: email3 = None: address2 = None: phone2 = None: notes = None: birthday = None: bmonth = None: byear = None: anday = None: anmonth = None: anyear = None:None]",
+  "fullName" : "test.test_add_contact.test_add_contact[id = None:, lastname = None: firstname = None: middlename = None: nickname = None: title = None: company = None: address =  None: homephone = None: mobilephone = None: workphine = None: faxphone = None: email = None: email2 = None: email3 = None: address2 = None: phone2 = None: notes = None: birthday = None: bmonth = None: byear = None: anday = None: anmonth = None: anyear = None:None]",
+  "historyId" : "af8963543e6477e16b05b62eb757709e",
+  "time" : {
+    "start" : 1547237424193,
+    "stop" : 1547237426868,
+    "duration" : 2675
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "host",
+    "value" : "Creator"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "thread",
+    "value" : "15704-MainThread"
+  }, {
+    "name" : "suite",
+    "value" : "test"
+  }, {
+    "name" : "testClass",
+    "value" : "test"
+  }, {
+    "name" : "testMethod",
+    "value" : "test_add_contact.test_add_contact[id = None:, lastname = None: firstname = None: middlename = None: nickname = None: title = None: company = None: address =  None: homephone = None: mobilephone = None: workphine = None: faxphone = None: email = None: email2 = None: email3 = None: address2 = None: phone2 = None: notes = None: birthday = None: bmonth = None: byear = None: anday = None: anmonth = None: anyear = None:None]"
+  }, {
+    "name" : "package",
+    "value" : "test"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "91c3110c4c3ac16f.json",
+  "parameterValues" : [ ]
+}

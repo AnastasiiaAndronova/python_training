@@ -1,0 +1,60 @@
+{
+  "uid" : "a9b6a4b3c79918b9",
+  "name" : "test_add_contact.test_add_contact[id = None:, lastname = lastname VT C-/2#^aEqk[: firstname = firstname0 5JE~)|rM w( nT&\"E: middlename = middlenamen |8,P\"|w6vZ{: nickname = nickname\"gn+)9( **N5# #^OG: title = title: company = company6yA: address =  addressWBnu : homephone = homephoneNt | @kw: mobilephone = mobilephoneU?}e: workphine = workphone`cd; ln~`: faxphone = faxphoneZ: email = emailU53yZ~%F,*YNM6x=`\"@}# W _4: email2 = email2H |QGdYBZyVIX7 $}: email3 = email3 \\\\_@pyEAz n\"3dF[9 :QN`$A: address2 = address2 57(j6w5J<x`NLz:F erP_7iO#i9b: phone2 = phone2~{m: notes = notesp;/ &8LA Lr: birthday = home: bmonth = 8: byear = February: anday = 1977: anmonth = 20: anyear = December:1989]",
+  "fullName" : "test.test_add_contact.test_add_contact[id = None:, lastname = lastname VT C-/2#^aEqk[: firstname = firstname0 5JE~)|rM w( nT&\"E: middlename = middlenamen |8,P\"|w6vZ{: nickname = nickname\"gn+)9( **N5# #^OG: title = title: company = company6yA: address =  addressWBnu : homephone = homephoneNt | @kw: mobilephone = mobilephoneU?}e: workphine = workphone`cd; ln~`: faxphone = faxphoneZ: email = emailU53yZ~%F,*YNM6x=`\"@}# W _4: email2 = email2H |QGdYBZyVIX7 $}: email3 = email3 \\\\_@pyEAz n\"3dF[9 :QN`$A: address2 = address2 57(j6w5J<x`NLz:F erP_7iO#i9b: phone2 = phone2~{m: notes = notesp;/ &8LA Lr: birthday = home: bmonth = 8: byear = February: anday = 1977: anmonth = 20: anyear = December:1989]",
+  "historyId" : "ecf978a6e74df311db507516fb1afe16",
+  "time" : {
+    "start" : 1547237437661,
+    "stop" : 1547237448904,
+    "duration" : 11243
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "host",
+    "value" : "Creator"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "thread",
+    "value" : "15704-MainThread"
+  }, {
+    "name" : "suite",
+    "value" : "test"
+  }, {
+    "name" : "testClass",
+    "value" : "test"
+  }, {
+    "name" : "testMethod",
+    "value" : "test_add_contact.test_add_contact[id = None:, lastname = lastname VT C-/2#^aEqk[: firstname = firstname0 5JE~)|rM w( nT&\"E: middlename = middlenamen |8,P\"|w6vZ{: nickname = nickname\"gn+)9( **N5# #^OG: title = title: company = company6yA: address =  addressWBnu : homephone = homephoneNt | @kw: mobilephone = mobilephoneU?}e: workphine = workphone`cd; ln~`: faxphone = faxphoneZ: email = emailU53yZ~%F,*YNM6x=`\"@}# W _4: email2 = email2H |QGdYBZyVIX7 $}: email3 = email3 \\\\_@pyEAz n\"3dF[9 :QN`$A: address2 = address2 57(j6w5J<x`NLz:F erP_7iO#i9b: phone2 = phone2~{m: notes = notesp;/ &8LA Lr: birthday = home: bmonth = 8: byear = February: anday = 1977: anmonth = 20: anyear = December:1989]"
+  }, {
+    "name" : "package",
+    "value" : "test"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "a9b6a4b3c79918b9.json",
+  "parameterValues" : [ ]
+}

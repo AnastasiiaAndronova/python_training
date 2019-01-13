@@ -1,0 +1,635 @@
+{
+  "7bea87103df41b54f74f79de6705649f" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "cd478aa2162e0164",
+      "status" : "passed",
+      "time" : {
+        "start" : 1547237708383,
+        "stop" : 1547237711984,
+        "duration" : 3601
+      }
+    } ]
+  },
+  "863bdc5a9a9fa0338731becd45713dd0" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "de83a8c28b53f30d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1547237711985,
+        "stop" : 1547237712847,
+        "duration" : 862
+      }
+    } ]
+  },
+  "62646591ff8e3cd27378a0fa88a8591a" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "4864f346aac5b909",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert 'emailU53yZ~%...\"3dF[9 :QN`$A' == 'emailU53yZ~%F...3 \\\\_@pyEAz n'\n  - emailU53yZ~%F,*YNM6x=`\"@}# W _4\n  ?                       ---------\n  + emailU53yZ~%F,*YNM6x=`\n    email2H |QGdYBZyVIX7 $}\n  - email3 \\_@pyEAz n\"3dF[9 :QN`$A\n  + email3 \\_@pyEAz n",
+      "time" : {
+        "start" : 1547237544606,
+        "stop" : 1547237554343,
+        "duration" : 9737
+      }
+    } ]
+  },
+  "2d7ea5791288a8ebebd5b70fd1e69039" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "f00a2890ad4cc566",
+      "status" : "passed",
+      "time" : {
+        "start" : 1547237712847,
+        "stop" : 1547237866561,
+        "duration" : 153714
+      }
+    } ]
+  },
+  "465467844c662e81491d7535460cf556" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "aa6a3c7eac82d37b",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert 'homephone~u]...honeKKphone2S' == 'homephone~u]h...neKK\\nphone2S'\n  - homephone~u]hOXmobilephone:oGygmGworkphoneKKphone2S\n  + homephone~u]hOX\n  + mobilephone:oGygmG\n  + workphoneKK\n  + phone2S",
+      "time" : {
+        "start" : 1547237554344,
+        "stop" : 1547237554672,
+        "duration" : 328
+      }
+    } ]
+  },
+  "dc779550dee45f03ca2519910327a612" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "b5c17f8e19e699e0",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert [id = [33] na...= [None], ...] == [id = [34] nam...= [None], ...]\n  At index 0 diff: id = [33] name = [New test group edited] header = [Test group header edited] footer = [Test group footer edited] != id = [34] name = [] header = [None] footer = [None]\n  Full diff:\n  - [id = [33] name = [New test group edited] header = [Test group header edited] footer = [Test group footer edited],\n  -  id = [34] name = [] header = [None] footer = [None],\n  ? ^\n  + [id = [34] name = [] header = [None] footer = [None],\n  ? ^...\n  \n  ...Full output truncated (74 lines hidden), use '-vv' to show",
+      "time" : {
+        "start" : 1547237973572,
+        "stop" : 1547237998154,
+        "duration" : 24582
+      }
+    } ]
+  },
+  "13170ad2b510a03f55a50367d4e4f6bd" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "27a184033a1c04f5",
+      "status" : "passed",
+      "time" : {
+        "start" : 1547237494306,
+        "stop" : 1547237495721,
+        "duration" : 1415
+      }
+    } ]
+  },
+  "44427b72070b651338ee5cd18deb2959" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "ee777ff9b06e8fd3",
+      "status" : "passed",
+      "time" : {
+        "start" : 1547237630968,
+        "stop" : 1547237708382,
+        "duration" : 77414
+      }
+    } ]
+  },
+  "8ccb07cf3db46b9a39790e50017671a1" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "32cd6ac1c22876b9",
+      "status" : "passed",
+      "time" : {
+        "start" : 1547237282575,
+        "stop" : 1547237321698,
+        "duration" : 39123
+      }
+    } ]
+  },
+  "ecd1ba4ccfac67c3d20bd255f5bcbfc7" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "57d0ea1b7c1621ba",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert [id = [34] na...= [None], ...] == [id = [34] nam...= [None], ...]\n  At index 4 diff: id = [48] name = [bla bla] header = [Test group header edited] footer = [Test group footer edited] != id = [54] name = [] header = [None] footer = [None]\n  Full diff:\n  [id = [34] name = [] header = [None] footer = [None],\n  id = [40] name = [] header = [None] footer = [None],\n  id = [41] name = [] header = [None] footer = [None],\n  id = [47] name = [] header = [None] footer = [None],\n  -  id = [48] name = [bla bla] header = [Test group header edited] footer = [Test group footer edited],...\n  \n  ...Full output truncated (68 lines hidden), use '-vv' to show",
+      "time" : {
+        "start" : 1547237998155,
+        "stop" : 1547238015596,
+        "duration" : 17441
+      }
+    } ]
+  },
+  "f15be639153b2c4145b69aca846629fd" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "6426873c345522d",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert 'emailZTVKema...\\x00@8OKZ0k*i' == 'emailZTVKemai...]FYj@8OKZ0k*i'\n  - emailZTVKemail2qHG0dOq!@%\"Hu3f>email3U@qb]FYj#x00@8OKZ0k*i\n  ?                                              -\n  + emailZTVKemail2qHG0dOq!@%\"Hu3f>email3U@qb]FYj@8OKZ0k*i",
+      "time" : {
+        "start" : 1547237495722,
+        "stop" : 1547237544605,
+        "duration" : 48883
+      }
+    } ]
+  },
+  "b71997f98d56bcb10f5b639e95e3177f" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "fd1c23d37d950a4a",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert [id = [33] na...= [None], ...] == [id = [1] name...= [None], ...]\n  At index 0 diff: id = [33] name = [] header = [None] footer = [None] != id = [1] name = [New test group edited] header = [None] footer = [None]\n  Full diff:\n  + [id = [1] name = [New test group edited] header = [None] footer = [None],\n  +  id = [2] name = [name CH] header = [None] footer = [None],\n  +  id = [3] name = [namef8] header = [None] footer = [None],\n  +  id = [4] name = [name5] header = [None] footer = [None],\n  +  id = [9] name = [name CH] header = [None] footer = [None],...\n  \n  ...Full output truncated (138 lines hidden), use '-vv' to show",
+      "time" : {
+        "start" : 1547237554674,
+        "stop" : 1547237562101,
+        "duration" : 7427
+      }
+    } ]
+  },
+  "79ccdf6cee5e13b2da7f763f90a8659" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "9e3af3a98df35dbe",
+      "status" : "passed",
+      "time" : {
+        "start" : 1547237492912,
+        "stop" : 1547237494305,
+        "duration" : 1393
+      }
+    } ]
+  },
+  "c79a176afa0b4d6db1d44ff31616302" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "f90a16c182c56547",
+      "status" : "passed",
+      "time" : {
+        "start" : 1547237321699,
+        "stop" : 1547237370172,
+        "duration" : 48473
+      }
+    } ]
+  },
+  "6ec3afc99b2f8cc8ff5c68439c788e67" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "3d527a6ad34c88f1",
+      "status" : "passed",
+      "time" : {
+        "start" : 1547237196727,
+        "stop" : 1547237222338,
+        "duration" : 25611
+      }
+    } ]
+  },
+  "45b63d8b07d7b786b6ac3ab611db2d39" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "6f776d0a114a32ca",
+      "status" : "passed",
+      "time" : {
+        "start" : 1547238015597,
+        "stop" : 1547238017634,
+        "duration" : 2037
+      }
+    } ]
+  },
+  "c8d986a3bfdd24450fa0352fedf290da" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "7160434c4a5f1ca4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1547237460180,
+        "stop" : 1547237471732,
+        "duration" : 11552
+      }
+    } ]
+  },
+  "e90af56fe1f9cd65eeb2dc2e04e29601" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "5b3686a66020137b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1547237489948,
+        "stop" : 1547237491466,
+        "duration" : 1518
+      }
+    } ]
+  },
+  "dfa54f696db58fd4c4bb2e7a33142986" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "869129f09e58b999",
+      "status" : "passed",
+      "time" : {
+        "start" : 1547237486971,
+        "stop" : 1547237488424,
+        "duration" : 1453
+      }
+    } ]
+  },
+  "bf1f547e820588fcc5fe02707fe6f11e" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "c068ed7c38b7429c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1547237222339,
+        "stop" : 1547237249926,
+        "duration" : 27587
+      }
+    } ]
+  },
+  "9477ae63cffea8a217b8b2dd142d6496" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "ea8d96c53186c2fa",
+      "status" : "passed",
+      "time" : {
+        "start" : 1547237491468,
+        "stop" : 1547237492912,
+        "duration" : 1444
+      }
+    } ]
+  },
+  "aa3375c34f3bd9a2ece4f5cefd087d5d" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "b105164c866a7e21",
+      "status" : "passed",
+      "time" : {
+        "start" : 1547237471733,
+        "stop" : 1547237483599,
+        "duration" : 11866
+      }
+    } ]
+  },
+  "4f7b7210eb602fbcddec30e30009dae3" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "e9fe1156ab178d2d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1547237488425,
+        "stop" : 1547237489946,
+        "duration" : 1521
+      }
+    } ]
+  },
+  "c805b15ac2ac237ae66dde173405b60d" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "e503cd4d0330f057",
+      "status" : "passed",
+      "time" : {
+        "start" : 1547237483600,
+        "stop" : 1547237486970,
+        "duration" : 3370
+      }
+    } ]
+  },
+  "6b11b13aa23a019312df8abe1db9dacd" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "3335a0bcbbfaf152",
+      "status" : "passed",
+      "time" : {
+        "start" : 1547237448905,
+        "stop" : 1547237460179,
+        "duration" : 11274
+      }
+    } ]
+  },
+  "22881055844746ed50f7bfd13a5b20e4" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "6ec02e160189a555",
+      "status" : "passed",
+      "time" : {
+        "start" : 1547237960384,
+        "stop" : 1547237973571,
+        "duration" : 13187
+      }
+    } ]
+  },
+  "5cff1bf1de8ed55ffd2524bc2e21d5de" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "13c54e125841e781",
+      "status" : "passed",
+      "time" : {
+        "start" : 1547237866562,
+        "stop" : 1547237960383,
+        "duration" : 93821
+      }
+    } ]
+  },
+  "5faaadbd9e3315e47d51cfc6f5fd59b9" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "bd367b074330ebe3",
+      "status" : "passed",
+      "time" : {
+        "start" : 1547237562102,
+        "stop" : 1547237630967,
+        "duration" : 68865
+      }
+    } ]
+  },
+  "b0e1b023722fdf9c844f4ae469fbe935" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "9c4d1eea672a48cb",
+      "status" : "passed",
+      "time" : {
+        "start" : 1547237426869,
+        "stop" : 1547237437660,
+        "duration" : 10791
+      }
+    } ]
+  },
+  "4b8cedf667716350469446b7d303070d" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "4e66c399a8f838b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1547237249927,
+        "stop" : 1547237282574,
+        "duration" : 32647
+      }
+    } ]
+  },
+  "ecf978a6e74df311db507516fb1afe16" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "a9b6a4b3c79918b9",
+      "status" : "passed",
+      "time" : {
+        "start" : 1547237437661,
+        "stop" : 1547237448904,
+        "duration" : 11243
+      }
+    } ]
+  },
+  "af8963543e6477e16b05b62eb757709e" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "91c3110c4c3ac16f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1547237424193,
+        "stop" : 1547237426868,
+        "duration" : 2675
+      }
+    } ]
+  },
+  "9cc5ce3ae095a18866d02acba52a749" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "fb9251f2ff9aad33",
+      "status" : "passed",
+      "time" : {
+        "start" : 1547237370173,
+        "stop" : 1547237424191,
+        "duration" : 54018
+      }
+    } ]
+  }
+}

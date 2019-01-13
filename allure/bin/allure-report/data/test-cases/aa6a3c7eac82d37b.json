@@ -1,0 +1,66 @@
+{
+  "uid" : "aa6a3c7eac82d37b",
+  "name" : "test_contact_info.test_check_all_contacts",
+  "fullName" : "test.test_contact_info.test_check_all_contacts",
+  "historyId" : "465467844c662e81491d7535460cf556",
+  "time" : {
+    "start" : 1547237554344,
+    "stop" : 1547237554672,
+    "duration" : 328
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "failed",
+  "statusMessage" : "AssertionError: assert 'homephone~u]...honeKKphone2S' == 'homephone~u]h...neKK\\nphone2S'\n  - homephone~u]hOXmobilephone:oGygmGworkphoneKKphone2S\n  + homephone~u]hOX\n  + mobilephone:oGygmG\n  + workphoneKK\n  + phone2S",
+  "statusTrace" : "app = <fixture.application.Application object at 0x044C72F0>, db = <fixture.db.DbFixture object at 0x045662B0>\n\n    def test_check_all_contacts(app,db):\n        app.contact.open_homepage()\n        db_contact=db.get_full_contact_list()\n        ap_contact=app.contact.get_contact_list()\n        #проверяем на  колличество записей\n        db_len=len (db_contact)\n        ap_len=len (ap_contact)\n        assert db_len == ap_len\n        def clean(contact):\n            return Contact(id=contact.id, firstname=contact.firstname.strip(), lastname=contact.lastname.strip())\n        #проверка с использованием старого метода сравнения\n        assert sorted(map(clean, db.get_contact_list()), key=Contact.id_or_max) == sorted(app.contact.get_contact_list(), key=Contact.id_or_max)\n        count_len=0\n        for i in db_contact:\n            for m in ap_contact:\n                if i.id==m.id:\n>                   assert clear(i.all_phones_from_home_page) ==clear(m.all_phones_from_home_page)\nE                   AssertionError: assert 'homephone~u]...honeKKphone2S' == 'homephone~u]h...neKK\\nphone2S'\nE                     - homephone~u]hOXmobilephone:oGygmGworkphoneKKphone2S\nE                     + homephone~u]hOX\nE                     + mobilephone:oGygmG\nE                     + workphoneKK\nE                     + phone2S\n\ntest\\test_contact_info.py:76: AssertionError",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "host",
+    "value" : "Creator"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "thread",
+    "value" : "15704-MainThread"
+  }, {
+    "name" : "suite",
+    "value" : "test"
+  }, {
+    "name" : "testClass",
+    "value" : "test"
+  }, {
+    "name" : "testMethod",
+    "value" : "test_contact_info.test_check_all_contacts"
+  }, {
+    "name" : "package",
+    "value" : "test"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "aa6a3c7eac82d37b.json",
+  "parameterValues" : [ ]
+}

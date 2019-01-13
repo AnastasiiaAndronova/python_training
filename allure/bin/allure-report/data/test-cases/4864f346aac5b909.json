@@ -1,0 +1,66 @@
+{
+  "uid" : "4864f346aac5b909",
+  "name" : "test_contact_info.test_some_contact_has_same_data_in_edit_and_home_page",
+  "fullName" : "test.test_contact_info.test_some_contact_has_same_data_in_edit_and_home_page",
+  "historyId" : "62646591ff8e3cd27378a0fa88a8591a",
+  "time" : {
+    "start" : 1547237544606,
+    "stop" : 1547237554343,
+    "duration" : 9737
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "failed",
+  "statusMessage" : "AssertionError: assert 'emailU53yZ~%...\"3dF[9 :QN`$A' == 'emailU53yZ~%F...3 \\\\_@pyEAz n'\n  - emailU53yZ~%F,*YNM6x=`\"@}# W _4\n  ?                       ---------\n  + emailU53yZ~%F,*YNM6x=`\n    email2H |QGdYBZyVIX7 $}\n  - email3 \\_@pyEAz n\"3dF[9 :QN`$A\n  + email3 \\_@pyEAz n",
+  "statusTrace" : "app = <fixture.application.Application object at 0x044C72F0>\n\n    def test_some_contact_has_same_data_in_edit_and_home_page(app):\n        if app.contact.count() == 0:\n            app.contact.create(Contact(firstname=\"Let me be the first\"))\n        contacts = app.contact.get_contact_list()\n        index = randrange(len(contacts))\n        contact_from_home_page = app.contact.get_contact_list()[index]\n        contact_from_edit_page = app.contact.get_contact_info_from_edit_page(index)\n        assert contact_from_home_page.all_phones_from_home_page == merge_phones_like_on_home_page(contact_from_edit_page)\n>       assert contact_from_home_page.all_emails_from_home_page == merge_all_emails_like_on_home_page(contact_from_edit_page)\nE       assert 'emailU53yZ~%...\"3dF[9 :QN`$A' == 'emailU53yZ~%F...3 \\\\_@pyEAz n'\nE         - emailU53yZ~%F,*YNM6x=`\"@}# W _4\nE         ?                       ---------\nE         + emailU53yZ~%F,*YNM6x=`\nE           email2H |QGdYBZyVIX7 $}\nE         - email3 \\_@pyEAz n\"3dF[9 :QN`$A\nE         + email3 \\_@pyEAz n\n\ntest\\test_contact_info.py:15: AssertionError",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "host",
+    "value" : "Creator"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "thread",
+    "value" : "15704-MainThread"
+  }, {
+    "name" : "suite",
+    "value" : "test"
+  }, {
+    "name" : "testClass",
+    "value" : "test"
+  }, {
+    "name" : "testMethod",
+    "value" : "test_contact_info.test_some_contact_has_same_data_in_edit_and_home_page"
+  }, {
+    "name" : "package",
+    "value" : "test"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "4864f346aac5b909.json",
+  "parameterValues" : [ ]
+}

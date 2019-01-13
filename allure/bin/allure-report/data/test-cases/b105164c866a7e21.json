@@ -1,0 +1,60 @@
+{
+  "uid" : "b105164c866a7e21",
+  "name" : "test_add_contact.test_add_contact[id = None:, lastname = lastname : firstname = firstnameW K9_ZFpg8Jhj &: middlename = middlename$Dq)4 ,W$3&zUF9: nickname = nickname4&W0 Foi,/ZI: title = title:5=s9:\\\\  Q: company = companyj|,<ER.OO4: address =  addressI[d- tUbV=mp_J;kw0E@;: homephone = homephoneQ3=: mobilephone = mobilephone3)r[rB?I: workphine = workphoneOA HzE: faxphone = faxphoneUGJ)4^q: email = email&2e!?>? rMW)&2Ym^tO:s_j_ljF 9: email2 = email2;0mW8o^/%hK*[YGY&Mp)S@( : email3 = email3: address2 = address2ZLBr ?sU`|F >< T r0UX[MK@cHkR aF@l 6ooY: phone2 = phone2qLxA: notes = notesW:V0PA lc  &\\\\T5: birthday = home1M : bmonth = 23: byear = April: anday = 1999: anmonth = 17: anyear = June:1969]",
+  "fullName" : "test.test_add_contact.test_add_contact[id = None:, lastname = lastname : firstname = firstnameW K9_ZFpg8Jhj &: middlename = middlename$Dq)4 ,W$3&zUF9: nickname = nickname4&W0 Foi,/ZI: title = title:5=s9:\\\\  Q: company = companyj|,<ER.OO4: address =  addressI[d- tUbV=mp_J;kw0E@;: homephone = homephoneQ3=: mobilephone = mobilephone3)r[rB?I: workphine = workphoneOA HzE: faxphone = faxphoneUGJ)4^q: email = email&2e!?>? rMW)&2Ym^tO:s_j_ljF 9: email2 = email2;0mW8o^/%hK*[YGY&Mp)S@( : email3 = email3: address2 = address2ZLBr ?sU`|F >< T r0UX[MK@cHkR aF@l 6ooY: phone2 = phone2qLxA: notes = notesW:V0PA lc  &\\\\T5: birthday = home1M : bmonth = 23: byear = April: anday = 1999: anmonth = 17: anyear = June:1969]",
+  "historyId" : "aa3375c34f3bd9a2ece4f5cefd087d5d",
+  "time" : {
+    "start" : 1547237471733,
+    "stop" : 1547237483599,
+    "duration" : 11866
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "host",
+    "value" : "Creator"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "thread",
+    "value" : "15704-MainThread"
+  }, {
+    "name" : "suite",
+    "value" : "test"
+  }, {
+    "name" : "testClass",
+    "value" : "test"
+  }, {
+    "name" : "testMethod",
+    "value" : "test_add_contact.test_add_contact[id = None:, lastname = lastname : firstname = firstnameW K9_ZFpg8Jhj &: middlename = middlename$Dq)4 ,W$3&zUF9: nickname = nickname4&W0 Foi,/ZI: title = title:5=s9:\\\\  Q: company = companyj|,<ER.OO4: address =  addressI[d- tUbV=mp_J;kw0E@;: homephone = homephoneQ3=: mobilephone = mobilephone3)r[rB?I: workphine = workphoneOA HzE: faxphone = faxphoneUGJ)4^q: email = email&2e!?>? rMW)&2Ym^tO:s_j_ljF 9: email2 = email2;0mW8o^/%hK*[YGY&Mp)S@( : email3 = email3: address2 = address2ZLBr ?sU`|F >< T r0UX[MK@cHkR aF@l 6ooY: phone2 = phone2qLxA: notes = notesW:V0PA lc  &\\\\T5: birthday = home1M : bmonth = 23: byear = April: anday = 1999: anmonth = 17: anyear = June:1969]"
+  }, {
+    "name" : "package",
+    "value" : "test"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "b105164c866a7e21.json",
+  "parameterValues" : [ ]
+}
